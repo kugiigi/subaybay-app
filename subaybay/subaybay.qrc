@@ -1,0 +1,95 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>icon.svg</file>
+        <file>splash.svg</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>subaybay.desktop</file>
+        <file>subaybay.apparmor</file>
+
+        <file>data/help.js</file>
+
+        <file>ui/SettingsComponent.qml</file>
+        <file>ui/BottomSwipeArea.qml</file>
+        <file>ui/MenuDrawer.qml</file>
+        <file>ui/ValuesListPage.qml</file>
+        <file>ui/BasePage.qml</file>
+        <file>ui/GlobalTooltip.qml</file>
+        <file>ui/ApplicationHeader.qml</file>
+        <file>ui/MainPage.qml</file>
+        <file>ui/ProfilesPopup.qml</file>
+        <file>ui/NewEntryPopup.qml</file>
+        <file>ui/HelpPage.qml</file>
+        <file>ui/SettingsPage.qml</file>
+        <file>ui/AboutPage.qml</file>
+        <file>ui/NewEntrySelectionPopup.qml</file>
+
+        <file>components/BottomEdgeHint.qml</file>
+        
+        <file>components/JSONListModel/JSONListModel.qml</file>
+        <file>components/JSONListModel/jsonpath.js</file>
+        
+        <file>components/common/KeyboardRectangle.qml</file>
+        <file>components/common/BaseAction.qml</file>
+        <file>components/common/BaseDialog.qml</file>
+        <file>components/common/BasePane.qml</file>
+        <file>components/common/ListViewPositioner.qml</file>
+        <file>components/common/CustomButton.qml</file>
+        <file>components/common/CustomPopup.qml</file>
+        <file>components/common/ActionButton.qml</file>
+        <file>components/common/ContextMenu.qml</file>
+        <file>components/common/CustomDialogButton.qml</file>
+        <file>components/common/EmptyState.qml</file>
+        <file>components/common/LoadingComponent.qml</file>
+        <file>components/common/DeleteConfirmDialog.qml</file>
+        <file>components/common/MouseAreaContext.qml</file>
+        <file>components/common/CustomLabel.qml</file>
+
+        <file>components/listmodels/BaseListModel.qml</file>
+        <file>components/listmodels/MainModels.qml</file>
+        <file>components/listmodels/SettingsModels.qml</file>
+        <file>components/listmodels/ModelWorkerScript.mjs</file>
+
+        
+        <file>components/applicationheader/HeaderTitle.qml</file>
+        <file>components/applicationheader/MenuActions.qml</file>
+        <file>components/applicationheader/HeaderActions.qml</file>
+        <file>components/applicationheader/HeaderToolButton.qml</file>
+        
+        
+        <file>components/mainpage/MonitorItemsDelegate.qml</file>
+        <file>components/mainpage/MonitorItemDelegate.qml</file>
+        <file>components/mainpage/ItemActions.qml</file>
+        
+        <file>components/newentrypopup/NewEntryItem.qml</file>
+        <file>components/newentrypopup/DateField.qml</file>
+        
+        <file>components/profilespopup/ProfileDialog.qml</file>
+        
+        <file>components/valueslistpage/CriteriaPopup.qml</file>
+        <file>components/valueslistpage/ValueListDelegate.qml</file>
+        <file>components/valueslistpage/ValuesNavigationRow.qml</file>
+        <file>components/valueslistpage/SummaryValuesDelegate.qml</file>
+
+        <file>components/settingspage/ComboBoxItem.qml</file>
+        <file>components/settingspage/CheckBoxItem.qml</file>
+        <file>components/settingspage/RadioButtonsItem.qml</file>
+
+        <file>components/aboutpage/ExternalDialog.qml</file>
+        <file>components/aboutpage/IconComponent.qml</file>
+        <file>components/aboutpage/SectionItem.qml</file>
+        <file>components/aboutpage/NavigationItem.qml</file>
+        
+        <file>components/helppage/DetailsPane.qml</file>
+        <file>components/helppage/NavigationPane.qml</file>
+        <file>components/helppage/detailspane/PaneFooter.qml</file>
+        <file>components/helppage/detailspane/ContentDelegate.qml</file>
+        <file>components/helppage/detailspane/contentdelegate/PaneHeader.qml</file>
+        <file>components/helppage/detailspane/contentdelegate/Delegate.qml</file>
+        
+        <file>library/database.js</file>
+        <file>library/dataUtils.js</file>
+        <file>library/functions.js</file>
+        <file>library/moment.mjs</file>
+    </qresource>
+</RCC>
