@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Subaybay
+Exec=subaybay
+Icon=subaybay/icon.svg
+Terminal=false
+Type=Application
+Keywords=health;monitor;vitals;old;senior citizen;senior;blood pressure;oxygen;pulse;life;sick;illness;
+X-Ubuntu-Touch=true
+X-Ubuntu-Splash-Image=subaybay/splash.svg
+X-Ubuntu-Splash-Show-Header=false
+X-Ubuntu-Splash-Title=Subaybay
+X-Ubuntu-Splash-Color=#b73003
+Name[en_PH]=Subaybay

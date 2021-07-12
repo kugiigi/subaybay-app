@@ -1,0 +1,15 @@
+{
+    "name": "subaybay.kugiigi",
+    "description": "A simple but powerful health monitoring app.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Subaybay",
+    "hooks": {
+        "subaybay": {
+            "apparmor": "subaybay/subaybay.apparmor",
+            "desktop": "subaybay/subaybay.desktop"
+        }
+    },
+    "version": "1.0",
+    "maintainer": "Kugi Eusebio <kugi_eusebio@protonmail.com>",
+    "framework": "ubuntu-sdk-16.04.5"
+}
