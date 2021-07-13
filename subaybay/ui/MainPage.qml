@@ -15,7 +15,7 @@ BasePage {
 
     title: mainView.profiles.currentName()
 
-    headerRightActions: [addAction, profilesAction, refreshAction]
+    headerRightActions: [addAction, profilesAction]
 
     BaseAction {
         id: profilesAction
@@ -38,18 +38,7 @@ BasePage {
             newEntrySelection.openPopup()
         }
     }
-    
-    BaseAction{
-        id: refreshAction
-    
-        text: i18n.tr("Refresh")
-        iconName: "reload"
-    
-        onTrigger:{
-            mainModels.dashboardModel.refresh()
-        }
-    }
-    
+
     function refresh() {
         listView.model.refresh()
     }
