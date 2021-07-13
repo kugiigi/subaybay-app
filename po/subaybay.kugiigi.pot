@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 02:12+0800\n"
+"POT-Creation-Date: 2021-07-13 18:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,321 +17,317 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:190
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/SettingsPage.qml:11
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:190
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:11
 msgid "Settings"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:191
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:9
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:191
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:9
 msgid "About"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:192
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:14
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/HelpPage.qml:28
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/SettingsPage.qml:16
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:192
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:14
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/HelpPage.qml:28
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:16
 msgid "Help"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:216
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:216
 msgid "Menu"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/BottomEdgeHint.qml:28
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/BottomEdgeHint.qml:28
 msgid ""
 "You can swipe from either side of the bottom edge to activate the actions in "
 "the header. \n"
 " Try it now!"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/BottomEdgeHint.qml:37
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/BottomEdgeHint.qml:37
 msgid "Okay"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:84
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:85
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:86
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:87
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:88
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:89
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:176
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:84
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:85
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:86
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:87
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:88
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:89
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:176
 msgid "Support"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:84
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:84
 msgid "Report a bug"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:85
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:85
 msgid "Contact Developer"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:86
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:86
 msgid "View source"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:87
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:87
 msgid "Donate"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:88
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:88
 msgid "View in OpenStore"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:89
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:89
 msgid "Other apps by the developer"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:90
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:180
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:90
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:180
 msgid "Developers"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:90
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:90
 msgid "Main developer"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:91
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:184
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:91
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:184
 msgid "Powered by"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:91
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:91
 msgid "Date and Time manipulation and formatting"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:23
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:127
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:23
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:127
 msgid "Switch Profile"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:34
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:77
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:90
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:92
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:34
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:77
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:90
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:92
 msgid "New Entry"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:45
-msgid "Refresh"
-msgstr ""
-
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:72
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:61
 msgid "Updating data"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:73
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:285
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:62
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:285
 msgid "Please wait"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:148
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:148
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
 msgid "Save"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:156
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:156
 msgid "Value saved"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:160
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:160
 msgid "Error saving data"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:163
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:163
 msgid "Fill up all required fields"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:166
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:166
 msgid "Error"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:178
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:56
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:85
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:178
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:56
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:85
 msgid "Cancel"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:252
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:252
 msgid "Comments/Observations"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:45
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:45
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
 msgid "Ok"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:21
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:21
 #, qt-format
 msgid "Delete the profile: %1?"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:22
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:22
 msgid "All associated data will be deleted."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:28
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:28
 msgid "Profile deleted"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:30
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:175
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:30
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:175
 msgid "Error deleting"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:40
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:138
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:40
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:138
 msgid "Edit"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:51
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:149
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:51
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:149
 msgid "Delete"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/SettingsPage.qml:54
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:153
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:54
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:153
 msgid "Theme"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/SettingsPage.qml:64
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:64
 msgid "Colored texts"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:103
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:103
 msgid "View Today"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:115
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:115
 msgid "Sort"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:165
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:165
 msgid "Delete this value?"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:172
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:172
 msgid "Value deleted"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:283
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:283
 msgid "No data"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:284
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:284
 msgid "Loading data"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/aboutpage/ExternalDialog.qml:10
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/aboutpage/ExternalDialog.qml:10
 msgid "Open external link"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/aboutpage/ExternalDialog.qml:25
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/aboutpage/ExternalDialog.qml:25
 msgid "You are about to open an external link. Do you wish to continue?"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/aboutpage/IconComponent.qml:32
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/aboutpage/IconComponent.qml:32
 msgid "Version"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/aboutpage/IconComponent.qml:41
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/aboutpage/IconComponent.qml:41
 msgid "Released under license"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/helppage/NavigationPane.qml:11
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/helppage/NavigationPane.qml:11
 msgid "Reach Me!"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/helppage/NavigationPane.qml:18
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/helppage/NavigationPane.qml:18
 msgid "Cool right?"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:29
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:29
 msgid "Ascending"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:30
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:30
 msgid "Descending"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:40
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:40
 msgid "Name"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:41
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:41
 msgid "Code"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/newentrypopup/DateField.qml:29
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/newentrypopup/DateField.qml:29
 msgid "Use current date and time"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:30
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:30
 msgid "Name already exists"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:107
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:107
 msgid "New Profile"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:115
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:115
 msgid "Display name"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:41
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:41
 #, qt-format
 msgid "%1 %2"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:45
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:45
 #, qt-format
 msgid "%1 - %2 %3"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:62
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:62
 msgid "Total"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:65
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:65
 msgid "Average"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:68
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:68
 msgid "Most recent"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:71
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:71
 msgid "Highest"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/helppage/detailspane/PaneFooter.qml:14
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/helppage/detailspane/PaneFooter.qml:14
 msgid "Previous"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/helppage/detailspane/PaneFooter.qml:35
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/helppage/detailspane/PaneFooter.qml:35
 msgid "Next"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:7
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:7
 msgid "Navigation"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:13
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:13
 msgid "Basics"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:14
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:14
 msgid ""
 "These are the basic actions that are commonly available when navigating "
 "within the app."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:17
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:17
 msgid "Header"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:18
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:18
 msgid ""
 "The header is consisted of the left action, title and the right action.\n"
 "Left action is reserved for the \"Menu\" button and the Back button.\n"
@@ -341,11 +337,11 @@ msgid ""
 "in the current page."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:21
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:21
 msgid "Drawer"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:22
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:22
 msgid ""
 "The left action in the header contains the \"Menu\" button which you can use "
 "to open the Drawer. The Drawer can be used to navigate between other pages "
@@ -353,11 +349,11 @@ msgid ""
 "page."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:25
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:25
 msgid "Content"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:26
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:26
 msgid ""
 "The Content is reserved to display the actual content of the current page "
 "which you can consume. Contents could be read-only or interactive.\n"
@@ -366,20 +362,20 @@ msgid ""
 "between tabs."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:29
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:29
 msgid "Footer"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:30
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:30
 msgid ""
 "The footer contains the available tabs in the current page if there's any."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:36
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:36
 msgid "Bottom Edge"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:37
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:37
 msgid ""
 "This app supports bottom edge gestures to help you navigate with one hand "
 "with ease. Just swipe from either side of the bottom edge and you'll trigger "
@@ -388,11 +384,11 @@ msgid ""
 "them from the bottom edge. See for yourself!"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:40
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:40
 msgid "Left Bottom Edge"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:41
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:41
 msgid ""
 "The left bottom edge is reserved to trigger the action(s) in the left side "
 "of the header. Currently, this can be the \"Menu\" button or the \"Back\" "
@@ -401,11 +397,11 @@ msgid ""
 "via the bottom edge."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:44
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:44
 msgid "Right Bototm Edge"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:45
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:45
 msgid ""
 "The right bottom edge is reserved to trigger the action(s) in the right side "
 "of the header. This can directly trigger the right action, if there's only "
@@ -415,29 +411,29 @@ msgid ""
 "- normally or via the bottom edge."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:48
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:48
 msgid "TRY THEM NOW!"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:49
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:49
 msgid ""
 "Swipe from the left bottom edge to go back.\n"
 "Swipe from the right bottom edge to see all the available Help pages."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:55
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:55
 msgid "Reachability"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:56
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:56
 msgid "This is totally not like Samsung's One UI 😂 "
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:59
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:59
 msgid "List Views / Flickables"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:60
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:60
 msgid ""
 "List Views / Flickables (scrollable contents) can be dragged down further "
 "when already at the top to increase the height of the header and make the "
@@ -446,207 +442,207 @@ msgid ""
 "The header will return to normal when you move the list upwards."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:63
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:63
 msgid "TRY IT NOW!"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:64
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:64
 msgid ""
 "Drag this page down until you see the header cover almost half of the page "
 "and reach the button at the top."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:143
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:143
 msgid "Settings Page"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:154
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:154
 msgid ""
 "Changes the theme of the app.\n"
 "Available themes: System, Ambiance and SuruDark System follows the current "
 "system theme"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:157
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:157
 msgid "Colored text"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:158
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:158
 msgid "Option to enable or disable colored texts for values, dates, etc."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:166
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:166
 msgid "About Page"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:173
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:173
 msgid ""
 "This page contains all the details about the app and their corresponding "
 "links if applicable."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:177
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:177
 msgid ""
 "In this section, you can get links to report a bug, contact the developer, "
 "view the app's source, DONATE to the develeoper, view the app in OpenStore, "
 "and view the developer's other apps."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:181
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:181
 msgid ""
 "All involved developers, contributors and maintainers are listed here and "
 "the link to contact them."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/data/help.js:185
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:185
 msgid "All 3rd party libraries that are used within the app is listed here."
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:87
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:87
 msgid "Default"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:94
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:94
 msgid "Urine"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:94
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:94
 msgid "Volume of urine"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:96
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:96
 msgid "Blood Pressure"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:96
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:96
 msgid "Pressure of the blood"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:98
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:98
 msgid "Oxygen"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:98
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:98
 msgid "Oxygen level in the blood"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:100
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:100
 msgid "Heart Rate"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:100
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:100
 msgid "Rate of heart beats"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:102
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:102
 msgid "Blood Sugar"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:102
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:102
 msgid "Sugar level in the blood"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:104
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:104
 msgid "Temperature"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:104
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:104
 msgid "Temperature of the body"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:138
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:138
 msgid "Systolic"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/database.js:140
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:140
 msgid "Diastolic"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:213
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:213
 msgid "Today's Total"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:215
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:215
 msgid "This week's Total"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:217
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:217
 msgid "Recent Total"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:222
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:222
 msgid "Today's Average"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:224
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:224
 msgid "This Week's Average"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:227
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:227
 msgid "Recent Daily Average"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:229
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:229
 msgid "Recent Average"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:238
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:238
 msgid "Highest Today"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:240
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:240
 msgid "Highest This Week"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/dataUtils.js:242
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:242
 msgid "Highest Recently"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:112
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:150
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:112
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:150
 msgid "Yesterday"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:147
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:147
 msgid "Today"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:153
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:153
 msgid "Tomorrow"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:156
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:156
 msgid "On "
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:159
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:159
 msgid "Last Week"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:162
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:162
 msgid "Next Week"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:165
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:165
 msgid "Last Month"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:168
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:168
 msgid "Next Month"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:171
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:171
 msgid "This Month"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:174
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:174
 msgid "Older"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/library/functions.js:177
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:177
 msgid "In The Future"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/build/aarch64-linux-gnu/app/subaybay/subaybay.desktop.h:1
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/aarch64-linux-gnu/app/subaybay/subaybay.desktop.h:1
 msgid "Subaybay"
 msgstr ""
