@@ -87,7 +87,7 @@ CustomPopup {
                 Layout.fillWidth: true
 
                 Suru.textLevel: Suru.HeadingTwo
-                text: i18n.tr("New Entry")
+                text: i18n.tr("Profiles")
             }
             
             ActionButton {
