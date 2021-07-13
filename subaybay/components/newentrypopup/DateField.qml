@@ -17,15 +17,38 @@ ColumnLayout {
 
     spacing: 5
   
-    CheckDelegate {
-        id: dateCheckBox
-    
+    RowLayout {
         Layout.fillWidth: true
-        text: i18n.tr("Use current date and time")
-        checkState: Qt.Checked
-        onCheckStateChanged: {
-            if (checkState !== Qt.Checked) {
-                dateField.dateValue = new Date()
+        spacing: 0
+
+        CheckDelegate {
+            id: dateCheckBox
+        
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            text: i18n.tr("Use current date and time")
+            checkState: Qt.Checked
+            onCheckStateChanged: {
+                if (checkState !== Qt.Checked) {
+                    dateField.dateValue = new Date()
+                }
+            }
+        }
+        
+        ActionButton {
+            id: addMoreButton
+
+            Layout.preferredWidth: Suru.units.gu(5)
+            Layout.fillHeight: true
+
+            iconName: "add"
+            color: Suru.backgroundColor
+            visible: otherItemsMenu.model.count !== fieldsModel.model.count && !newEntryPopup.editMode
+            onClicked: otherItemsMenu.popup(addMoreButton)
+
+            SeparatorLine {
+                anchors.bottom: parent.bottom
+                width: parent.width
             }
         }
     }
@@ -45,10 +68,12 @@ ColumnLayout {
             
             focusPolicy: Qt.StrongFocus
       
-            contentItem: Label {
+            contentItem: CustomLabel {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 text: Qt.formatDateTime(dateField.dateValue, "dddd, MMMM d, yyyy")
+                font.italic: true
+                role: "date"
             }
             onClicked: {
                 highlighted = true
@@ -64,10 +89,12 @@ ColumnLayout {
             focusPolicy: Qt.StrongFocus
       
             Layout.fillWidth: true
-            contentItem: Label {
+            contentItem: CustomLabel {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 text: Qt.formatDateTime(dateField.dateValue, "hh:mm ap")
+                font.italic: true
+                role: "date"
             }
                           
             onClicked: {
@@ -82,7 +109,7 @@ ColumnLayout {
       
         property var caller
 
-        parent: mainView.corePage //ApplicationWindow.overlay
+        parent: mainView.corePage
       
         standardButtons: Dialog.Ok | Dialog.Cancel
         closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside

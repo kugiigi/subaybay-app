@@ -260,26 +260,6 @@ CustomPopup {
                     font.pixelSize: 15
                 }
             }
-            
-            CustomButton {
-                id: addMoreButton
-            
-                Layout.fillWidth: true
-                Layout.preferredHeight: 40
-                visible: otherItemsMenu.model.count !== fieldsModel.model.count && !newEntryPopup.editMode
-            
-                onClicked: otherItemsMenu.popup()
-            
-                contentItem: Label {
-                    anchors {
-                        left: parent.left
-                        right: parent.right
-                        margins: 20
-                    }
-                    verticalAlignment: Text.AlignVCenter
-                    text: i18n.tr("Add Other Values")
-                }
-            }
         }
     }
     

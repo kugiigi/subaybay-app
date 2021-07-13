@@ -53,11 +53,12 @@ ColumnLayout {
     RowLayout {
         Layout.fillWidth: true
 
-        Label {
+        CustomLabel {
             id: titleLabel
             
             Layout.fillWidth: true
             Suru.textLevel: Suru.HeadingThree
+            role: "item"
         }
         
         ActionButton {
@@ -83,7 +84,7 @@ ColumnLayout {
             Layout.fillWidth: true
             spacing: 10
 
-            TextField {
+            CustomTextField {
                 id: valueTextField
                 
                 
@@ -91,6 +92,7 @@ ColumnLayout {
                 Layout.fillWidth: true
                 placeholderText: model.title
                 inputMethodHints: Qt.ImhDigitsOnly
+                role: "value"
                 validator: DoubleValidator{
                     decimals: model.precision
                 }

@@ -1,6 +1,6 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.5
-import Ubuntu.Components 1.3 as UT
+import QtQuick.Controls.Suru 2.2
 import "../components/mainpage"
 import "../components/common"
 import "../library/functions.js" as Functions
@@ -15,7 +15,7 @@ BasePage {
 
     title: mainView.profiles.currentName()
 
-    headerRightActions: [addAction, profilesAction]
+    headerRightActions: [addAction, profilesAction, refreshAction]
 
     BaseAction {
         id: profilesAction
@@ -39,6 +39,17 @@ BasePage {
         }
     }
     
+    BaseAction{
+        id: refreshAction
+    
+        text: i18n.tr("Refresh")
+        iconName: "reload"
+    
+        onTrigger:{
+            mainModels.dashboardModel.refresh()
+        }
+    }
+    
     function refresh() {
         listView.model.refresh()
     }
@@ -52,6 +63,16 @@ BasePage {
         onActiveProfileChanged: {
             refresh()
         }
+    }
+
+    EmptyState {
+        id: emptyState
+       
+        anchors.centerIn: parent
+        loadingTitle: i18n.tr("Updating data")
+        loadingSubTitle: i18n.tr("Please wait")
+        isLoading: !listView.model.ready
+        shown: listView.model.count === 0 || !listView.model.ready
     }
 
     ListView {
@@ -68,6 +89,7 @@ BasePage {
             bottom: parent.bottom
             bottomMargin: topMargin
         }
+        opacity: model.ready? 1 : 0.7
         
         spacing: 10
         model: mainModels.dashboardModel
@@ -84,5 +106,13 @@ BasePage {
             }
         }
         ScrollBar.vertical: ScrollBar { width: 10 }
+        
+        NumberAnimation on opacity {
+            running: listView.model.ready
+            from: 0
+            to: 1
+            easing: Suru.animations.EasingInOut
+            duration: Suru.animations.SlowDuration
+        }
     }
 }
