@@ -44,6 +44,8 @@
         <file>components/common/DeleteConfirmDialog.qml</file>
         <file>components/common/MouseAreaContext.qml</file>
         <file>components/common/CustomLabel.qml</file>
+        <file>components/common/CustomTextField.qml</file>
+        <file>components/common/SeparatorLine.qml</file>
 
         <file>components/listmodels/BaseListModel.qml</file>
         <file>components/listmodels/MainModels.qml</file>

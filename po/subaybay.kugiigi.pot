@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 01:27+0800\n"
+"POT-Creation-Date: 2021-07-14 02:12+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,24 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:164
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:190
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/SettingsPage.qml:11
 msgid "Settings"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:165
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:191
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:9
 msgid "About"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:166
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:192
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/AboutPage.qml:14
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/HelpPage.qml:28
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/SettingsPage.qml:16
 msgid "Help"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:190
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/Main.qml:216
 msgid "Menu"
 msgstr ""
 
@@ -107,9 +107,23 @@ msgid "Switch Profile"
 msgstr ""
 
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:34
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:52
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:77
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:90
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:92
 msgid "New Entry"
+msgstr ""
+
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:45
+msgid "Refresh"
+msgstr ""
+
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:72
+msgid "Updating data"
+msgstr ""
+
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/MainPage.qml:73
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:285
+msgid "Please wait"
 msgstr ""
 
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:148
@@ -134,7 +148,7 @@ msgid "Error"
 msgstr ""
 
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:178
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:40
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:56
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:85
 msgid "Cancel"
 msgstr ""
@@ -143,11 +157,7 @@ msgstr ""
 msgid "Comments/Observations"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntryPopup.qml:280
-msgid "Add Other Values"
-msgstr ""
-
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:29
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:45
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
 msgid "Ok"
 msgstr ""
@@ -178,19 +188,6 @@ msgstr ""
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:51
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:149
 msgid "Delete"
-msgstr ""
-
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:81
-msgid "Profiles"
-msgstr ""
-
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:102
-msgid "Close"
-msgstr ""
-
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ProfilesPopup.qml:111
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:107
-msgid "New Profile"
 msgstr ""
 
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/SettingsPage.qml:54
@@ -224,10 +221,6 @@ msgstr ""
 
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:284
 msgid "Loading data"
-msgstr ""
-
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/ui/ValuesListPage.qml:285
-msgid "Please wait"
 msgstr ""
 
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/aboutpage/ExternalDialog.qml:10
@@ -270,12 +263,16 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
-#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/newentrypopup/DateField.qml:24
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/newentrypopup/DateField.qml:29
 msgid "Use current date and time"
 msgstr ""
 
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:30
 msgid "Name already exists"
+msgstr ""
+
+#: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:107
+msgid "New Profile"
 msgstr ""
 
 #: /home/phablet/Documents/Development/Subaybay/devel/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:115

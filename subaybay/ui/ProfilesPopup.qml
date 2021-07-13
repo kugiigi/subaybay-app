@@ -1,7 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.5
 import QtQuick.Controls.Suru 2.2
-import Ubuntu.Components 1.3 as UT
+import QtQuick.Layouts 1.12
 import "../components/profilespopup"
 import "../components/common"
 
@@ -72,69 +72,54 @@ CustomPopup {
         listView: profilesListView
     }
   
-    Item {
+    ColumnLayout {
         anchors.fill: parent
-  
-        UT.PageHeader {
+
+        RowLayout {
             id: header
-  
-            title: i18n.tr("Profiles")
-            theme.name: switch(mainView.suruTheme) {
-              case Suru.Light:
-                "Ubuntu.Components.Themes.Ambiance"
-                break
-              case Suru.Dark:
-                "Ubuntu.Components.Themes.SuruDark"
-                break
-              case undefined:
-                undefined
-                break
+
+            Layout.fillWidth: true
+            Layout.preferredHeight: Suru.units.gu(6)
+            Layout.leftMargin: Suru.units.gu(2)
+            Layout.rightMargin: Suru.units.gu(1)
+
+            Label {
+                Layout.fillWidth: true
+
+                Suru.textLevel: Suru.HeadingTwo
+                text: i18n.tr("New Entry")
             }
-            anchors {
-                top: parent.top
-                left: parent.left
-                right: parent.right
-            }
-  
-            leadingActionBar.actions: [
-                UT.Action {
-                    iconName: "close"
-                    text: i18n.tr("Close")
-                    onTriggered: profilesPopup.close()
+            
+            ActionButton {
+                Layout.preferredWidth: Suru.units.gu(5)
+
+                iconName: "add"
+                color: Suru.backgroundColor
+                
+                onClicked: {
+                    profileDialog.openNew()
                 }
-            ]
-  
-            trailingActionBar {
-                actions: [
-                    UT.Action {
-                        iconName: "add"
-                        text: i18n.tr("New Profile")
-  
-                        onTriggered: {
-                            profileDialog.openNew()
-                        }
-                    }
-               ]
             }
         }
-  
+
+        SeparatorLine {
+            Layout.fillWidth: true
+        }
+
         ButtonGroup {
             id: profilesGroup
         }
   
         ListView {
             id: profilesListView
-            
+
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+
             clip: true
             currentIndex: -1
   
             model: mainModels.profilesModel
-            anchors {
-                top: header.bottom
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
   
             delegate: RadioDelegate {
                 id: radioDelegate

@@ -8,8 +8,8 @@ CustomButton {
 
 	property alias iconName: icon.name
 
-  color: theme.normal.foreground
-  focusPolicy: Qt.NoFocus
+    color: theme.normal.foreground
+    focusPolicy: Qt.NoFocus
     
 	UT.Icon {
 		id: icon

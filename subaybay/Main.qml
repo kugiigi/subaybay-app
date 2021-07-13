@@ -5,8 +5,10 @@ import Ubuntu.Components.Themes.Ambiance 1.3 as Ambiance
 import Ubuntu.Components.Themes.SuruDark 1.3 as SuruDark
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
+import Ubuntu.Components 1.3 as UT
 import "library/database.js" as Data
 import "library/dataUtils.js" as DataUtils
+import "library/functions.js" as Functions
 import "components/listmodels"
 import "components/common"
 import "components"
@@ -35,6 +37,7 @@ ApplicationWindow {
     property var profiles: dataUtils.profiles
     property var monitoritems: dataUtils.monitoritems
     property var values: dataUtils.values(settings.activeProfile)
+    property date currentDate: Functions.getToday()
     
     property alias settings: settingsLoader.item
     property alias mainModels: listModelsLoader.item
@@ -94,13 +97,36 @@ ApplicationWindow {
     Ambiance.Palette{id: ambianceTheme}
     SuruDark.Palette{id: suruDarkTheme}
     
+    function checkIfDayChanged() {
+        if (!Functions.isToday(currentDate)) {
+            currentDate = Functions.getToday()
+        }
+    }
+    
     MainView {
         //Only for making translation work
         id: dummyMainView
         applicationName: "subaybay.kugiigi"
         visible: false
     }
-    
+
+    Connections {
+        target: Qt.application
+
+        onStateChanged: {
+            if (state == Qt.ApplicationActive) {
+                checkIfDayChanged()
+            }
+        }
+    }
+
+    UT.LiveTimer {
+        frequency: UT.LiveTimer.Hour
+        onTrigger: {
+            checkIfDayChanged()
+        }
+    }
+
     GlobalTooltip{
         id: tooltip
     }

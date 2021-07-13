@@ -37,8 +37,8 @@ ItemDelegate {
                 Layout.fillWidth: true
                 Suru.textLevel: Suru.HeadingThree
                 font.pointSize: 11
-                font.italic: true
                 text: valueListDelegate.entryDate
+                font.italic: true
                 role: "date"
             }
         }

@@ -131,8 +131,12 @@ Item{
         }
     }
 
-    UT.LiveTimer {
-        frequency: UT.LiveTimer.Hour
-        onTrigger: dashboardModel.refresh()
+    Connections {
+        target: mainView
+
+        onCurrentDateChanged: {
+            console.log("dashboard refreshed")
+            dashboardModel.refresh()
+        }
     }
 }

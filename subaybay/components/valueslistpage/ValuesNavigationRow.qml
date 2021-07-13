@@ -60,6 +60,8 @@ RowLayout {
                     Layout.fillWidth: true
                     Layout.alignment: Qt.AlignBaseline
                     Suru.textLevel: Suru.HeadingTwo
+                    font.pointSize: Suru.units.gu(2)
+                    font.italic: true
                     role: "date"
                 }
               
