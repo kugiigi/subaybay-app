@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 18:28+0000\n"
+"POT-Creation-Date: 2021-07-15 18:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -561,88 +561,88 @@ msgstr ""
 msgid "Diastolic"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:213
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:218
 msgid "Today's Total"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:215
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:220
 msgid "This week's Total"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:217
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:222
 msgid "Recent Total"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:222
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:227
 msgid "Today's Average"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:224
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:229
 msgid "This Week's Average"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:227
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:232
 msgid "Recent Daily Average"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:229
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:234
 msgid "Recent Average"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:238
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:243
 msgid "Highest Today"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:240
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:245
 msgid "Highest This Week"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:242
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:247
 msgid "Highest Recently"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:112
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:150
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:116
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:154
 msgid "Yesterday"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:147
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:151
 msgid "Today"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:153
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:157
 msgid "Tomorrow"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:156
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:160
 msgid "On "
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:159
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:163
 msgid "Last Week"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:162
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:166
 msgid "Next Week"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:165
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:169
 msgid "Last Month"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:168
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:172
 msgid "Next Month"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:171
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:175
 msgid "This Month"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:174
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:178
 msgid "Older"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:177
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:181
 msgid "In The Future"
 msgstr ""
 

@@ -79,7 +79,7 @@ var dataUtils = dataUtils || (function (undefined) {
                 , dashList: function() {
                     var current, datesObj, currentItems, currentItem;
                     var currentItemId, prevItemId;
-                    var currentIndex
+                    var currentIndex;
                     var valueType, scope, dateScope, grouping;
                     var value, title, entryDate;
                     var dateFrom, dateTo, today;
@@ -96,6 +96,21 @@ var dataUtils = dataUtils || (function (undefined) {
                         currentItemId = current.item_id
                         scope = current.scope
                         valueType = current.value_type
+                        
+                        switch(true) {
+                            case scope.indexOf('daily') > -1:
+                                grouping = "day";
+                                break;
+                            case scope.indexOf('weekly') > -1:
+                                grouping = "week";
+                                break;
+                            case scope.indexOf('monthly') > -1:
+                                grouping = "month";
+                                break;
+                            default:
+                                grouping = "none";
+                                break;
+                        }
 
                         switch(true) {
                             case scope.indexOf('today') > -1:
@@ -112,7 +127,12 @@ var dataUtils = dataUtils || (function (undefined) {
                                 break;
                             case scope.indexOf('recent') > -1:
                                 dateScope = "recent";
-                                datesObj = Functions.getStartEndDate(today, 'recent');
+                                if (grouping !== "none" && valueType == "average") {
+                                    datesObj = Functions.getStartEndDate(today, 'recent exclude');
+                                } else {
+                                    datesObj = Functions.getStartEndDate(today, 'recent');
+                                }
+
                                 dateFrom = datesObj.start;
                                 dateTo = datesObj.end;
                                 break;
@@ -126,21 +146,6 @@ var dataUtils = dataUtils || (function (undefined) {
                                 dateScope = "today";
                                 dateFrom = today;
                                 dateTo = dateFrom;
-                                break;
-                        }
-                        
-                        switch(true) {
-                            case scope.indexOf('daily') > -1:
-                                grouping = "day";
-                                break;
-                            case scope.indexOf('weekly') > -1:
-                                grouping = "week";
-                                break;
-                            case scope.indexOf('monthly') > -1:
-                                grouping = "month";
-                                break;
-                            default:
-                                grouping = "none";
                                 break;
                         }
                         

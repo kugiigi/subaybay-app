@@ -77,7 +77,14 @@ ColumnLayout {
             }
             onClicked: {
                 highlighted = true
-                dateTimeDialog.openDialog(dateButton, "Months|Days|Years", dateField.dateValue)
+                var popup = datePickerComponent.createObject(mainView.corePage, {dateTime: dateField.dateValue})
+                popup.accepted.connect(function() {
+                    dateField.dateValue = popup.dateTime
+                })
+                popup.closed.connect(function() {
+                    dateButton.highlighted = false
+                })
+                popup.open();
             }
         }
       
@@ -99,38 +106,61 @@ ColumnLayout {
                           
             onClicked: {
                 highlighted = true
-                dateTimeDialog.openDialog(timeButton, "Hours|Minutes", dateField.dateValue)
+                var popup = timePickerComponent.createObject(mainView.corePage, {hour: dateField.dateValue.getHours(), minute: dateField.dateValue.getMinutes(), fullDate: dateField.dateValue})
+                popup.accepted.connect(function() {
+                    var date = new Date(dateField.dateValue)
+                    date.setHours(popup.hour);
+                    date.setMinutes(popup.minute)
+                    dateField.dateValue = date;
+                })
+                popup.closed.connect(function() {
+                    timeButton.highlighted = false
+                })
+                popup.open();
             }
         }
     }
-    
-    Dialog {
-        id: dateTimeDialog
-      
-        property var caller
 
-        parent: mainView.corePage
-      
-        standardButtons: Dialog.Ok | Dialog.Cancel
-        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
-        width: parent.width
-        height: 250
-        y: parent.height - height
+    Component {
+        id: datePickerComponent
+        Dialog {
+            id: datePicker
+            property int maxSize: Math.min(parent.width, parent.height)
+            property int size: Math.min(maxSize, 500)
+            property alias dateTime: p.date
+            width: size - 80
+            height: size
+            x: (parent.width - width) / 2
+            y: parent.height - height
 
-        onAccepted: dateField.dateValue = dateTimePicker.date
-        onClosed: caller.highlighted = false
-
-        function openDialog(caller, mode, date) {
-            dateTimePicker.mode = mode
-            dateTimePicker.date = date
-            dateTimeDialog.caller = caller
-            open()
+            DatePicker {
+                id: p
+                width: parent.width
+                height: parent.height
+                date: datePicker.dateTime
+            }
+            standardButtons: Dialog.Ok | Dialog.Cancel
         }
+    }
 
-        DatePicker {
-            id: dateTimePicker
-        
-            anchors.centerIn: parent
+    Component {
+        id: timePickerComponent
+        Dialog {
+            id: timePicker
+            property int maxSize: Math.min(parent.width, parent.height)
+            property int size: Math.min(maxSize, 500)
+            property alias hour: p.hour
+            property alias minute: p.minute
+            height: size
+            width: parent.width
+            y: parent.height - height
+
+            TimePicker {
+                id: p
+                width: parent.width
+                height: parent.height
+            }
+            standardButtons: Dialog.Ok | Dialog.Cancel
         }
     }
 }

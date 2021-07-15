@@ -46,6 +46,8 @@
         <file>components/common/CustomLabel.qml</file>
         <file>components/common/CustomTextField.qml</file>
         <file>components/common/SeparatorLine.qml</file>
+        <file>components/common/DatePicker.qml</file>
+        <file>components/common/TimePicker.qml</file>
 
         <file>components/listmodels/BaseListModel.qml</file>
         <file>components/listmodels/MainModels.qml</file>

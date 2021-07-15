@@ -64,7 +64,11 @@ function getStartEndDate(date,mode){
         break;
     case 'recent':
         lastDay = momentDate.endOf('day').format("YYYY-MM-DD HH:mm:ss")
-        firstDay = momentDate.subtract(7, 'day').startOf('day').format("YYYY-MM-DD HH:mm:ss")
+        firstDay = momentDate.subtract(6, 'day').startOf('day').format("YYYY-MM-DD HH:mm:ss")
+        break;
+    case 'recent exclude':
+        lastDay = momentDate.subtract(1, 'day').endOf('day').format("YYYY-MM-DD HH:mm:ss")
+        firstDay = momentDate.subtract(6, 'day').startOf('day').format("YYYY-MM-DD HH:mm:ss")
         break;
     case 'year':
         firstDay = momentDate.startOf('year').startOf('day').format("YYYY-MM-DD HH:mm:ss")

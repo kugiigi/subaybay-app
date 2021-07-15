@@ -1,2 +1,6 @@
+v1.1
+ - Fix automatic refreshing of dashboard when day changed
+ - New date and time picker.  Thanks to Michael Zanettim for sharing these from the awesome Nymea app
+ - Exclude current date in recent daily average calculation
 v1.0
  - First release in the OpenStore
