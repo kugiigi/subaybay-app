@@ -18,7 +18,7 @@ ApplicationWindow {
     id: mainView
 
     readonly property QtObject drawer: drawerLoader.item
-    readonly property string current_version: "1.0"
+    readonly property string current_version: "1.1"
     readonly property var suruTheme: switch(settings.currentTheme) {
             case "System":
                 undefined
@@ -37,7 +37,7 @@ ApplicationWindow {
     property var profiles: dataUtils.profiles
     property var monitoritems: dataUtils.monitoritems
     property var values: dataUtils.values(settings.activeProfile)
-    property date currentDate: Functions.getToday()
+    property string currentDate: Functions.getToday()
     
     property alias settings: settingsLoader.item
     property alias mainModels: listModelsLoader.item
