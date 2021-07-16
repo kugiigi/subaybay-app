@@ -151,6 +151,7 @@ ColumnLayout {
             property int size: Math.min(maxSize, 500)
             property alias hour: p.hour
             property alias minute: p.minute
+            property alias fullDate: p.fullDate
             height: size
             width: parent.width
             y: parent.height - height
