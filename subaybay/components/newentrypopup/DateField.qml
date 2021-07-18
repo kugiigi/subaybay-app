@@ -44,7 +44,7 @@ ColumnLayout {
             iconName: "add"
             color: Suru.backgroundColor
             visible: otherItemsMenu.model.count !== fieldsModel.model.count && !newEntryPopup.editMode
-            onClicked: otherItemsMenu.popup(addMoreButton)
+            onClicked: otherItemsMenu.popup(addMoreButton, 0, addMoreButton.height)
 
             SeparatorLine {
                 anchors.bottom: parent.bottom
@@ -71,10 +71,11 @@ ColumnLayout {
             contentItem: CustomLabel {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                text: Qt.formatDateTime(dateField.dateValue, "dddd, MMMM d, yyyy")
+                text: Functions.formatDate(dateField.dateValue, "ddd, MMMM DD, YYYY")
                 font.italic: true
                 role: "date"
             }
+
             onClicked: {
                 highlighted = true
                 var popup = datePickerComponent.createObject(mainView.corePage, {dateTime: dateField.dateValue})
@@ -99,7 +100,7 @@ ColumnLayout {
             contentItem: CustomLabel {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                text: Qt.formatDateTime(dateField.dateValue, "hh:mm ap")
+                text: Functions.formatDate(dateField.dateValue, "hh:mm A")
                 font.italic: true
                 role: "date"
             }
@@ -123,45 +124,11 @@ ColumnLayout {
 
     Component {
         id: datePickerComponent
-        Dialog {
-            id: datePicker
-            property int maxSize: Math.min(parent.width, parent.height)
-            property int size: Math.min(maxSize, 500)
-            property alias dateTime: p.date
-            width: size - 80
-            height: size
-            x: (parent.width - width) / 2
-            y: parent.height - height
-
-            DatePicker {
-                id: p
-                width: parent.width
-                height: parent.height
-                date: datePicker.dateTime
-            }
-            standardButtons: Dialog.Ok | Dialog.Cancel
-        }
+        DatePickerDialog {}
     }
 
     Component {
         id: timePickerComponent
-        Dialog {
-            id: timePicker
-            property int maxSize: Math.min(parent.width, parent.height)
-            property int size: Math.min(maxSize, 500)
-            property alias hour: p.hour
-            property alias minute: p.minute
-            property alias fullDate: p.fullDate
-            height: size
-            width: parent.width
-            y: parent.height - height
-
-            TimePicker {
-                id: p
-                width: parent.width
-                height: parent.height
-            }
-            standardButtons: Dialog.Ok | Dialog.Cancel
-        }
+        TimePickerDialog{}
     }
 }

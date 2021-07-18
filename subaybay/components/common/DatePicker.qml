@@ -58,6 +58,7 @@ ColumnLayout {
             text: root.date.toLocaleDateString()
             Layout.fillWidth: true
             horizontalAlignment: Text.AlignHCenter
+            Suru.textLevel: Suru.HeadingThree
         }
 
         UT.Icon {

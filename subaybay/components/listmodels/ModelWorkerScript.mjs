@@ -108,6 +108,8 @@ WorkerScript.onMessage = function (msg) {
             }
             break;
         case "Values_1":
+        case "Values_2":
+        case "Values_3":
             txtDisplayFormat = msg.properties.displayFormat
             dashItems = msg.properties.dashItems
 
@@ -126,9 +128,7 @@ WorkerScript.onMessage = function (msg) {
                 currentItemId = txtItemId
                 
                 txtFormattedEntryDate = moment(txtEntryDate).format("hh:mm A")
-                // txtFormattedEntryDate = Qt.formatDateTime(txtEntryDate, "hh:mm AP")
                 realValue = round(realValue, intPrecision)
-                // console.log(txtEntryDate + " - " + realValue)
                 
                 if (currentEntryDate !== prevEntryDate) {
                     total = total + realValue

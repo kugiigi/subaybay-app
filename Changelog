@@ -1,5 +1,10 @@
 v1.2
  - Fix new time picker not working properly
+ - Fix adding comments when editing without one
+ - Layout changes in the date picker
+ - Add proper horizontal swiping in data navigation page
+ - Add Date selection in data navigation page
+ - Other minor fixes and code refactoring
 
 v1.1
  - Fix automatic refreshing of dashboard when day changed

@@ -5,6 +5,7 @@ import Ubuntu.Components 1.3 as UT
 import QtQuick.Layouts 1.12
 import "../components/newentrypopup"
 import "../components/common"
+import "../library/functions.js" as Functions
 
 CustomPopup {
     id: newEntryPopup
@@ -87,8 +88,9 @@ CustomPopup {
             } else {
                 entryDate = dateField.checked ? new Date() : dateField.dateValue
             }
-            entryDate = Qt.formatDateTime(entryDate, "yyyy-MM-dd hh:mm:ss.zzz")
-            
+
+            entryDate = Functions.formatDateForDB(entryDate)
+
             for (var i = 0; i < fieldsModel.count; i++) {
                 currentItem = fieldsModel.itemAt(i)
                 itemId = currentItem.itemId
@@ -97,7 +99,7 @@ CustomPopup {
                     currentField = currentItem.fieldsRepeater.itemAt(h)
                     fieldId = currentField.fieldId
                     value = currentField.value
-                    // console.log(fieldId + " - " + itemId + " - " + value)
+
                     if (value) {
                         valuesToSave.push({fieldId: fieldId, itemId: itemId, value: value})
                     } else {

@@ -91,7 +91,7 @@ BasePage {
 
             onClicked: {
                 var today = Functions.getToday()
-                stackView.push(Qt.resolvedUrl("ValuesListPage.qml"), {itemId: model.itemId, scope: "day", toDate: today, fromDate: today})
+                stackView.push(Qt.resolvedUrl("ValuesListPage.qml"), {itemId: model.itemId, scope: "day", currentDate: today})
             }
         }
         ScrollBar.vertical: ScrollBar { width: 10 }

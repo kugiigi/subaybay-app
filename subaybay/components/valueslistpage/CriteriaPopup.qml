@@ -2,16 +2,51 @@ import QtQuick 2.12
 import QtQuick.Controls 2.5
 import QtQuick.Controls.Suru 2.2
 import "../common"
-
+import "../../library/functions.js" as Functions
 
 CustomPopup {
     id: criteriaPopup
   
     property string activeItemId
+    property date dateValue
     
-    signal select(string selectedItemId)
+    signal select(string selectedItemId, date selectedDate)
     
-    standardButtons: Dialog.Ok
+    standardButtons: Dialog.Ok | Dialog.Cancel
+    
+    onAccepted: select(activeItemId, dateValue)
+    
+    header: CustomButton {
+        id: dateButton
+
+        focusPolicy: Qt.StrongFocus
+
+        contentItem: CustomLabel {
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            text: Functions.formatDate(criteriaPopup.dateValue, "ddd, MMMM DD, YYYY")
+            font.italic: true
+            font.pointSize: Suru.units.gu(2)
+            role: "date"
+        }
+
+        onClicked: {
+            highlighted = true
+            var popup = datePickerComponent.createObject(mainView.corePage, {dateTime: criteriaPopup.dateValue})
+            popup.accepted.connect(function() {
+                criteriaPopup.dateValue = popup.dateTime
+            })
+            popup.closed.connect(function() {
+                dateButton.highlighted = false
+            })
+            popup.open();
+        }
+    }
+
+    Component {
+        id: datePickerComponent
+        DatePickerDialog {}
+    }
 
     Item {
         anchors.fill: parent
@@ -46,7 +81,7 @@ CustomPopup {
                 
                 onToggled: {
                     if (checked) {
-                        select(model.itemId)
+                        criteriaPopup.activeItemId = model.itemId
                     }
                 }
 
