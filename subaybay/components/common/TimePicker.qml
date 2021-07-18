@@ -259,7 +259,7 @@ ColumnLayout {
 
                 function update() {
                     var angle = calculateAngle(mouseX, mouseY);
-                    var newDate = new Date()
+                    var newDate = new Date(root.fullDate)
 
                     var items = d.mode == "hours" ? 12 : 60
 
@@ -286,7 +286,7 @@ ColumnLayout {
                         if (root.minute !== selected) {
                             root.minute = selected
                             newDate.setMinutes(selected)
-                            oot.fullDate = newDate
+                            root.fullDate = newDate
                             pressEffect.start()
                         }
                     }

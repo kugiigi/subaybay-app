@@ -1,6 +1,15 @@
+v1.2
+ - Fix new time picker not working properly
+ - Fix adding comments when editing without one
+ - Layout changes in the date picker
+ - Add proper horizontal swiping in data navigation page
+ - Add Date selection in data navigation page
+ - Other minor fixes and code refactoring
+
 v1.1
  - Fix automatic refreshing of dashboard when day changed
- - New date and time picker.  Thanks to Michael Zanettim for sharing these from the awesome Nymea app
+ - New date and time picker.  Thanks to Michael Zanetti for sharing these from the awesome Nymea app
  - Exclude current date in recent daily average calculation
+
 v1.0
  - First release in the OpenStore

@@ -8,7 +8,10 @@ Item{
     property alias profilesModel: profilesModel
     property alias dashboardModel: dashboardModel
     property alias dashItemsModel: dashItemsModel
+    property var valuesListModels: [firstValuesListModel, secondValuesListModel, thirdValuesListModel]
     property alias firstValuesListModel: firstValuesListModel
+    property alias secondValuesListModel: secondValuesListModel
+    property alias thirdValuesListModel: thirdValuesListModel
     property alias monitorItemsModel: monitorItemsModel
     property alias monitorItemsFieldsModel: monitorItemsFieldsModel
     
@@ -34,6 +37,14 @@ Item{
             case "Values_1":
                 firstValuesListModel.summaryValues = messageObject.result
                 firstValuesListModel.loadingStatus = "Ready"
+                break;
+            case "Values_2":
+                secondValuesListModel.summaryValues = messageObject.result
+                secondValuesListModel.loadingStatus = "Ready"
+                break;
+            case "Values_3":
+                thirdValuesListModel.summaryValues = messageObject.result
+                thirdValuesListModel.loadingStatus = "Ready"
                 break;
             case "Dashboard":
                 dashboardModel.loadingStatus = "Ready"
@@ -90,33 +101,22 @@ Item{
         }
     }
 
-    BaseListModel {
+    BaseValuesModel {
         id: firstValuesListModel
-        
-        property var summaryValues
 
-        worker: workerLoader
         modelId: "Values_1"
+    }
 
-        function getDashItems(itemId) {
-            var current
-            var currentItemId
-            var dashItems = []
-            for (var i = 0; i < dashItemsModel.count; i++) {
-                current = dashItemsModel.get(i)
-                currentItemId = current.itemId
-                if (currentItemId == itemId) {
-                    dashItems.push(current.valueType)
-                }
-            }
-            return dashItems
-        }
+    BaseValuesModel {
+        id: secondValuesListModel
 
-        function load(itemId, displayFormat, scope, dateFrom, dateTo) {
-            var dashItems = getDashItems(itemId);
-            properties = { displayFormat: displayFormat, dashItems: dashItems }
-            fillData(mainView.values.itemValues(itemId, scope, dateFrom, dateTo))
-        }
+        modelId: "Values_2"
+    }
+
+    BaseValuesModel {
+        id: thirdValuesListModel
+
+        modelId: "Values_3"
     }
 
     BaseListModel {

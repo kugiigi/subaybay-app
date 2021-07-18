@@ -48,8 +48,13 @@
         <file>components/common/SeparatorLine.qml</file>
         <file>components/common/DatePicker.qml</file>
         <file>components/common/TimePicker.qml</file>
+        <file>components/common/PathViewBase.qml</file>
+        <file>components/common/BasePickerDialog.qml</file>
+        <file>components/common/DatePickerDialog.qml</file>
+        <file>components/common/TimePickerDialog.qml</file>
 
         <file>components/listmodels/BaseListModel.qml</file>
+        <file>components/listmodels/BaseValuesModel.qml</file>
         <file>components/listmodels/MainModels.qml</file>
         <file>components/listmodels/SettingsModels.qml</file>
         <file>components/listmodels/ModelWorkerScript.mjs</file>

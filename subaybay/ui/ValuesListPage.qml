@@ -10,15 +10,15 @@ import "../library/functions.js" as Functions
 BasePage {
     id: valuesListPage
 
-    readonly property bool isToday: Functions.isToday(fromDate) && toDate == fromDate
-    property string itemId
-    property string fromDate
-    readonly property string displayFormat: mainView.mainModels.monitorItemsModel.getItem(itemId, "itemId").displayFormat
-    property string toDate
-    property string scope
     readonly property string unit: mainView.mainModels.monitorItemsModel.getItem(itemId, "itemId").displaySymbol
+    readonly property string displayFormat: mainView.mainModels.monitorItemsModel.getItem(itemId, "itemId").displayFormat
+    readonly property bool isToday: Functions.isToday(dateViewPath.currentItem.fromDate)
+    property string currentDate: Functions.getToday()
 
-    flickable: listView
+    property string itemId
+    property string scope
+
+    flickable: dateViewPath.currentItem.view
 
     title: mainView.profiles.currentName()
     
@@ -40,38 +40,22 @@ BasePage {
             refresh()
         }
     }
-    
+
     onItemDeleted: {
         refresh()
         mainModels.dashboardModel.refresh();
     }
 
-    onRefresh: {
-        loadData()
+    onCurrentDateChanged: {
+        dateViewPath.scrollToBegginer()
     }
 
-    Component.onCompleted: {
-        loadData()
-    }
-    
-    function loadData() {
-        listView.model.load(itemId, displayFormat, scope, fromDate, toDate)
-    }
-    
     function next() {
-        if (scope == "day") {
-            fromDate = Functions.getNextDate(scope, fromDate)
-            toDate = fromDate
-        }
-        refresh()
+        dateViewPath.incrementCurrentIndex()
     }
     
     function previous() {
-        if (scope == "day") {
-            fromDate = Functions.getPreviousDate(scope, fromDate)
-            toDate = fromDate
-        }
-        refresh()
+        dateViewPath.decrementCurrentIndex()
     }
 
     function newEntry() {
@@ -80,10 +64,18 @@ BasePage {
     
     function goToday() {
         if (scope == "day") {
-            fromDate = Functions.getToday()
-            toDate = fromDate
+            currentDate = Functions.getToday()
         }
-        refresh()
+    }
+
+    Shortcut {
+        sequence: StandardKey.MoveToNextChar
+        onActivated: next()
+    }
+
+    Shortcut {
+        sequence: StandardKey.MoveToPreviousChar
+        onActivated: previous()
     }
 
     BaseAction{
@@ -185,15 +177,17 @@ BasePage {
         itemProperties: { "entryDateId": "", "entryDate": "", "fields": "", "itemId": "", "value": "", "comments": "" }
 
         actions: [editAction, separatorAction, deleteAction]
-        listView: listView
+        listView: dateViewPath.currentItem.view
     }
     
     CriteriaPopup {
         id: criteriaPopup
 
         activeItemId: valuesListPage.itemId
+        dateValue: new Date(dateViewPath.currentItem.fromDate)
         onSelect: {
             valuesListPage.itemId = selectedItemId
+            valuesListPage.currentDate = Functions.formatDateForDB(selectedDate)
             valuesListPage.refresh()
         }
     }
@@ -209,20 +203,19 @@ BasePage {
   
         ValuesNavigationRow {
             id: navigationRow
-            
+
             function labelRefresh() {
-                dateTitle = Qt.binding(function() { return Functions.relativeDate(valuesListPage.fromDate,"ddd, MMM DD", "Basic") })
+                dateTitle = Qt.binding(function() { return Functions.relativeDate(dateViewPath.currentItem.fromDate,"ddd, MMM DD", "Basic") })
             }
-            
+
             Component.onCompleted: labelRefresh()
 
             Layout.fillWidth: true
             Layout.maximumHeight: 90
             z: 1
-            
+
             itemTitle: mainView.mainModels.monitorItemsModel.getItem(valuesListPage.itemId, "itemId").displayName
-            // dateTitle: 
-            
+
             onCriteria: criteriaPopup.openPopup()
             onNext: valuesListPage.next()
             onPrevious: valuesListPage.previous()
@@ -237,100 +230,94 @@ BasePage {
             topPadding: 0
             bottomPadding: 0
         }
-  
-        Item {
+        
+        PathViewBase {
+            id: dateViewPath
+
+            objectName: "dateViewPath"
+
             Layout.fillWidth: true
             Layout.fillHeight: true
 
-            UT.SwipeArea {
-                id: leftSwipe
+            delegate: Item {                
+                property alias model: listView.model
+                property alias count: listView.count
+                property alias view: listView
+                property string fromDate: Functions.addDays(valuesListPage.currentDate, dateViewPath.loopCurrentIndex + dateViewPath.indexType(index))
+                property string toDate: fromDate
 
-                z: 10
-                property bool draggingCustom: distance >= Suru.units.gu(15)
-                anchors.fill: parent
-                direction: UT.SwipeArea.Leftwards
-                immediateRecognition: false
-                grabGesture: false
+                height: parent.height
+                width: parent.width
 
-                onDraggingCustomChanged: {
-                    if (draggingCustom) {
-                        valuesListPage.next()
-                    }
+                function loadData() {
+                    listView.model.load(valuesListPage.itemId, valuesListPage.displayFormat, valuesListPage.scope, fromDate, fromDate)
                 }
-            }
+                
+                onFromDateChanged: {
+                    loadData()
+                }
+
+                Connections {
+                    target: valuesListPage
+                    onRefresh: loadData()
+                }
+
+                EmptyState {
+                    id: emptyState
+                   
+                    anchors.centerIn: parent
+                    title: i18n.tr("No data")
+                    loadingTitle: i18n.tr("Loading data")
+                    loadingSubTitle: i18n.tr("Please wait")
+                    isLoading: !listView.model.ready
+                    shown: listView.model.count === 0 || !listView.model.ready
+                }
             
-            UT.SwipeArea {
-                id: rightSwipe
-
-                z: 10
-                property bool draggingCustom: distance >= Suru.units.gu(15)
-                anchors.fill: parent
-                direction: UT.SwipeArea.Rightwards
-                immediateRecognition: false
-                grabGesture: false
-
-                onDraggingCustomChanged: {
-                    if (draggingCustom) {
-                        valuesListPage.previous()
-                    }
-                }
-            }
-  
-            EmptyState {
-                id: emptyState
-               
-                anchors.centerIn: parent
-                title: i18n.tr("No data")
-                loadingTitle: i18n.tr("Loading data")
-                loadingSubTitle: i18n.tr("Please wait")
-                isLoading: !listView.model.ready
-                shown: listView.model.count === 0 || !listView.model.ready
-            }
-        
-            ListView {
-                id: listView
-      
-                anchors.fill: parent
-                z: 0
-                boundsBehavior: Flickable.DragOverBounds
-                focus: true
-                currentIndex: -1
-                visible: model.ready
-      
-                model: mainModels.firstValuesListModel
-        
-                delegate: ValueListDelegate {
-                    id: valuesListDelegate
-                    anchors {
-                      left: parent.left
-                      right: parent.right
-                    }
-                    values: model.values
-                    entryDate: model.entryDate
-                    comments: model.comments
-                    unit: valuesListPage.unit
-                    highlighted: listView.currentIndex == index
-
-                    onShowContextMenu: {
-                        var itemProperties = { entryDateId: model.entryDateId
-                                , entryDate: model.entryDate, fields: model.fields
-                                , itemId: model.itemId, value: model.values
-                                , comments: model.comments
+                ListView {
+                    id: listView
+          
+                    anchors.fill: parent
+                    z: 0
+                    boundsBehavior: Flickable.DragOverBounds
+                    focus: true
+                    currentIndex: -1
+                    visible: model.ready
+          
+                    model: mainModels.valuesListModels[index]
+            
+                    delegate: ValueListDelegate {
+                        id: valuesListDelegate
+                        anchors {
+                          left: parent.left
+                          right: parent.right
                         }
+                        values: model.values
+                        entryDate: model.entryDate
+                        comments: model.comments
+                        unit: valuesListPage.unit
+                        highlighted: listView.currentIndex == index
 
-                        listView.currentIndex = index
-                        contextMenu.popupMenu(valuesListDelegate, mouseX, mouseY, itemProperties)
+                        onShowContextMenu: {
+                            var itemProperties = { entryDateId: model.entryDateId
+                                    , entryDate: model.entryDate, fields: model.fields
+                                    , itemId: model.itemId, value: model.values
+                                    , comments: model.comments
+                            }
+
+                            listView.currentIndex = index
+                            contextMenu.popupMenu(valuesListDelegate, mouseX, mouseY, itemProperties)
+                        }
                     }
-                }
 
-                ScrollBar.vertical: ScrollBar { width: 10 }
-                ListViewPositioner{z: 5; mode: "Down"}
-                NumberAnimation on opacity {
-                    running: listView.count > 0
-                    from: 0
-                    to: 1
-                    easing: Suru.animations.EasingInOut
-                    duration: Suru.animations.BriskDuration
+                    ScrollBar.vertical: ScrollBar { width: 10 }
+                    ListViewPositioner{z: 5; mode: "Down"}
+                    NumberAnimation on opacity {
+                        running: listView.count > 0
+                        from: 0
+                        to: 1
+                        easing: Suru.animations.EasingInOut
+                        duration: Suru.animations.BriskDuration
+                    }
                 }
             }
         }
@@ -338,14 +325,14 @@ BasePage {
         SummaryValuesDelegate {
             id: summaryValues
       
-            valuesModel: listView.model.summaryValues
-            visible: listView.model.ready && listView.model.count > 0
+            valuesModel: dateViewPath.currentItem.model.summaryValues
+            visible: dateViewPath.currentItem.model.ready && dateViewPath.currentItem.model.count > 0
             unit: valuesListPage.unit
       
             Layout.fillWidth: true
 
             NumberAnimation on opacity {
-                running: listView.count > 0
+                running: dateViewPath.currentItem.count > 0
                 from: 0
                 to: 1
                 easing: Suru.animations.EasingInOut

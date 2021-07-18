@@ -22,6 +22,14 @@ function round_number(num, dec) {
     return Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
 }
 
+function formatDateForDB(petsa) {
+    return formatDate(petsa, "YYYY-MM-DD HH:mm:ss.SSS")
+}
+
+function formatDate(petsa, format) {
+    return moment(petsa).format(format)
+}
+
 function getUTCToday() {
     //get current date
     var today = moment.utc(new Date()).format("YYYY-MM-DD HH:mm:ss.SSS")
@@ -42,6 +50,11 @@ function isToday(petsa) {
     var today = moment(new Date())
 
     return dtPetsa.isSame(today,'day')
+}
+
+function addDays(petsa, days) {
+    var momentDate = moment(petsa)
+    return momentDate.add(days, 'day').format("YYYY-MM-DD HH:mm:ss.SSS")
 }
 
 function getStartEndDate(date,mode){
@@ -79,6 +92,7 @@ function getStartEndDate(date,mode){
         firstDay = momentDate.subtract(50, 'year').startOf('day').format("YYYY-MM-DD HH:mm:ss")
         break;
     default:
+        firstDay = momentDate.startOf('day').format("YYYY-MM-DD HH:mm:ss")
         firstDay = momentDate.startOf('day').format("YYYY-MM-DD HH:mm:ss")
         lastDay = momentDate.endOf('day').format("YYYY-MM-DD HH:mm:ss")
         break;

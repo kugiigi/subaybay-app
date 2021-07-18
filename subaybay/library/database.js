@@ -494,13 +494,24 @@ function editComment(txtEntryDate, intProfileId, txtNewComments) {
     var success
     var errorMsg
     var result
+    var txtInsertStatement, txtUpdateStatement
+    
+    txtInsertStatement = 'INSERT INTO monitor_items_comments ("entry_date", "profile_id", "comments") \
+                        VALUES(strftime("%Y-%m-%d %H:%M:%f", ?, "utc"),?,?)'
+    txtUpdateStatement = "UPDATE monitor_items_comments SET comments = ? WHERE profile_id = ? \
+                        AND strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime') = strftime('%Y-%m-%d %H:%M:%f', ?)"
 
     try {
         db.transaction(function (tx) {
-            tx.executeSql(
-                        "UPDATE monitor_items_comments SET comments = ? WHERE profile_id = ? \
-                        AND strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime') = strftime('%Y-%m-%d %H:%M:%f', ?)",
-                        [txtNewComments, intProfileId, txtEntryDate])
+            if (checkCommentIfExist(txtEntryDate)) {
+                tx.executeSql(
+                            txtUpdateStatement,
+                            [txtNewComments, intProfileId, txtEntryDate])
+            } else {
+                tx.executeSql(
+                    txtInsertStatement,
+                    [txtEntryDate, intProfileId, txtNewComments])
+            }
         })
         success = true
     } catch (err) {
@@ -512,6 +523,20 @@ function editComment(txtEntryDate, intProfileId, txtNewComments) {
     result = {"success": success, "error": errorMsg}
     
     return result
+}
+
+function checkCommentIfExist(txtEntryDate) {
+    var db = openDB()
+    var rs = null
+    var exists
+
+    db.transaction(function (tx) {
+        rs = tx.executeSql("SELECT * FROM monitor_items_comments WHERE strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime') = strftime('%Y-%m-%d %H:%M:%f', ?)", [txtEntryDate])
+
+        exists = rs.rows.length === 0 ? false : true
+    })
+
+    return exists
 }
 
 // Check if profile has values data

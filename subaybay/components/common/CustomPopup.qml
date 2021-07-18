@@ -18,7 +18,7 @@ Dialog {
                                               : parent.height > maximumHeight ? preferredHeight
                                                                               : parent.height
     x: (parent.width - width) / 2
-    parent: mainView.corePage//ApplicationWindow.overlay
+    parent: mainView.corePage
     topPadding: Suru.units.gu(0.2)
     leftPadding: Suru.units.gu(0.2)
     rightPadding: Suru.units.gu(0.2)
