@@ -1,0 +1,698 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-18 15:09+0000\n"
+"PO-Revision-Date: 2021-08-02 13:36+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:190
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:11
+msgid "Settings"
+msgstr "Instellingen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:191
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:9
+msgid "About"
+msgstr "Over"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:192
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:14
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/HelpPage.qml:28
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:16
+msgid "Help"
+msgstr "Hulp"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:216
+msgid "Menu"
+msgstr "Menu"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/BottomEdgeHint.qml:28
+msgid ""
+"You can swipe from either side of the bottom edge to activate the actions in "
+"the header. \n"
+" Try it now!"
+msgstr ""
+"Veeg vanaf de onderkant van het scherm omhoog om werkbalkitems te "
+"activeren.\n"
+" Probeer het meteen!"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/BottomEdgeHint.qml:37
+msgid "Okay"
+msgstr "Oké"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:84
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:85
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:86
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:87
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:88
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:89
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:176
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:84
+msgid "Report a bug"
+msgstr "Bug melden"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:85
+msgid "Contact Developer"
+msgstr "Contact opnemen met ontwikkelaar"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:86
+msgid "View source"
+msgstr "Broncode bekijken"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:87
+msgid "Donate"
+msgstr "Doneren"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:88
+msgid "View in OpenStore"
+msgstr "Bekijken in OpenStore"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:89
+msgid "Other apps by the developer"
+msgstr "Andere apps van deze ontwikkelaar"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:90
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:180
+msgid "Developers"
+msgstr "Ontwikkelaars"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:90
+msgid "Main developer"
+msgstr "Hoofdontwikkelaar"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:91
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:184
+msgid "Powered by"
+msgstr "Aangedreven door"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:91
+msgid "Date and Time manipulation and formatting"
+msgstr "Datum- en tijdsaanpassing en -opmaak"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:23
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:119
+msgid "Switch Profile"
+msgstr "Ander profiel kiezen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:34
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:77
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:84
+msgid "New Entry"
+msgstr "Nieuw item"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:61
+msgid "Updating data"
+msgstr "Bezig met bijwerken…"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:62
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:271
+msgid "Please wait"
+msgstr "Even geduld…"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:150
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
+msgid "Save"
+msgstr "Opslaan"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:158
+msgid "Value saved"
+msgstr "De waarde is opgeslagen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:162
+msgid "Error saving data"
+msgstr "De gegevens kunnen niet worden opgeslagen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:165
+msgid "Fill up all required fields"
+msgstr "Vul alle verplichte velden in"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:168
+msgid "Error"
+msgstr "Foutmelding"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:180
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:56
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:85
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:254
+msgid "Comments/Observations"
+msgstr "Opmerkingen/Waarnemingen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:45
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
+msgid "Ok"
+msgstr "Oké"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:21
+#, qt-format
+msgid "Delete the profile: %1?"
+msgstr "Weet je zeker dat je ‘%1’ wilt verwijderen?"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:22
+msgid "All associated data will be deleted."
+msgstr "Alle bijbehorende gegevens worden eveneens verwijderd."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:28
+msgid "Profile deleted"
+msgstr "Het profiel is verwijderd"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:30
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:167
+msgid "Error deleting"
+msgstr "Het verwijderen is mislukt"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:40
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:130
+msgid "Edit"
+msgstr "Aanpassen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:51
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:141
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:90
+msgid "Profiles"
+msgstr "Profielen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:54
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:153
+msgid "Theme"
+msgstr "Thema"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:64
+msgid "Colored texts"
+msgstr "Gekleurde tekst"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:95
+msgid "View Today"
+msgstr "Ga naar vandaag"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:107
+msgid "Sort"
+msgstr "Sorteren"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:157
+msgid "Delete this value?"
+msgstr "Weet je zeker dat je deze waarde wilt verwijderen?"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:164
+msgid "Value deleted"
+msgstr "De waarde is verwijderd"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:269
+msgid "No data"
+msgstr "Geen gegevens"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:270
+msgid "Loading data"
+msgstr "Bezig met laden van gegevens…"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/aboutpage/ExternalDialog.qml:10
+msgid "Open external link"
+msgstr "Externe link openen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/aboutpage/ExternalDialog.qml:25
+msgid "You are about to open an external link. Do you wish to continue?"
+msgstr "Je staat op het punt om een externe link te openen. Wil je doorgaan?"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/aboutpage/IconComponent.qml:32
+msgid "Version"
+msgstr "Versie"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/aboutpage/IconComponent.qml:41
+msgid "Released under license"
+msgstr "Uitgebracht onder de licentie"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/helppage/NavigationPane.qml:11
+msgid "Reach Me!"
+msgstr "Je moet mij bereiken!"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/helppage/NavigationPane.qml:18
+msgid "Cool right?"
+msgstr "Tof, hè?"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:29
+msgid "Ascending"
+msgstr "Oplopend"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:30
+msgid "Descending"
+msgstr "Aflopend"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:40
+msgid "Name"
+msgstr "Naam"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/listmodels/SettingsModels.qml:41
+msgid "Code"
+msgstr "Code"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/newentrypopup/DateField.qml:29
+msgid "Use current date and time"
+msgstr "Huidige datum en tijd gebruiken"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:30
+msgid "Name already exists"
+msgstr "Deze naam is al in gebruik"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:107
+msgid "New Profile"
+msgstr "Nieuw profiel"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:115
+msgid "Display name"
+msgstr "Weergavenaam"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:41
+#, qt-format
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:45
+#, qt-format
+msgid "%1 - %2 %3"
+msgstr "%1 - %2 %3"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:62
+msgid "Total"
+msgstr "Totaal"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:65
+msgid "Average"
+msgstr "Gemiddeld"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:68
+msgid "Most recent"
+msgstr "Recentst"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:71
+msgid "Highest"
+msgstr "Hoogst"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/helppage/detailspane/PaneFooter.qml:14
+msgid "Previous"
+msgstr "Vorige"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/helppage/detailspane/PaneFooter.qml:35
+msgid "Next"
+msgstr "Volgende"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:7
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:13
+msgid "Basics"
+msgstr "Algemeen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:14
+msgid ""
+"These are the basic actions that are commonly available when navigating "
+"within the app."
+msgstr ""
+"Dit zijn de algemene acties die beschikbaar zijn tijdens het gebruik van de "
+"app."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:17
+msgid "Header"
+msgstr "Werkbalk"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:18
+msgid ""
+"The header is consisted of the left action, title and the right action.\n"
+"Left action is reserved for the \"Menu\" button and the Back button.\n"
+"The title displays the appropriate text that best describe the current "
+"page.\n"
+"Right action is a dynamic list of context-based actions that you can perform "
+"in the current page."
+msgstr ""
+"De werkbalk bestaat uit de linkeractie, naam en rechteractie.\n"
+"De linkeractie is toegewezen aan de menu- en terugknoppen.\n"
+"De naam toont de naam van de huidige pagina.\n"
+"De rechteractie is toegewezen aan acties die bij de huidige pagina passen."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:21
+msgid "Drawer"
+msgstr "Navigatiemenu"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:22
+msgid ""
+"The left action in the header contains the \"Menu\" button which you can use "
+"to open the Drawer. The Drawer can be used to navigate between other pages "
+"within the app which includes pages such as Setttings, About and the Help "
+"page."
+msgstr ""
+"De linkeractie bevat de menuknop, welke kan worden gebruikt om de "
+"navigatiebalk te openen. Met die balk kun je andere pagina's binnen de app "
+"openen, zoals ‘Instellingen’, ‘Over’ en ‘Hulp’."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:25
+msgid "Content"
+msgstr "Inhoud"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:26
+msgid ""
+"The Content is reserved to display the actual content of the current page "
+"which you can consume. Contents could be read-only or interactive.\n"
+"\n"
+"Whenever the footer is available, you can swipe horizontally to navigate "
+"between tabs."
+msgstr ""
+"Het inhoudsgedeelte is toegewezen aan de inhoud van de huidige pagina. "
+"Inhoud kan alleen-lezen of interactief zijn.\n"
+"\n"
+"Als de onderste balk getoond wordt, dan kun je die gebruiken om tussen "
+"tabbladen te schakelen middels een horizontale veeg."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:29
+msgid "Footer"
+msgstr "Onderste balk"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:30
+msgid ""
+"The footer contains the available tabs in the current page if there's any."
+msgstr ""
+"De onderste balk bevat tabbladen van de huidige pagina (indien beschikbaar)."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:36
+msgid "Bottom Edge"
+msgstr "Onderste rand"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:37
+msgid ""
+"This app supports bottom edge gestures to help you navigate with one hand "
+"with ease. Just swipe from either side of the bottom edge and you'll trigger "
+"the corresponding actions.\n"
+"Other elements in the app also adjust their position if you trigger/open "
+"them from the bottom edge. See for yourself!"
+msgstr ""
+"Deze app ondersteunt vegen vanaf de onderste rand om de daaraan toegewezen "
+"acties met één hand uit te voeren.\n"
+"Andere items binnen de app passen hun positie aan als je ze vanaf de "
+"onderkant triggert. Probeer het zelf!"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:40
+msgid "Left Bottom Edge"
+msgstr "Onderste linkerrand"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:41
+msgid ""
+"The left bottom edge is reserved to trigger the action(s) in the left side "
+"of the header. Currently, this can be the \"Menu\" button or the \"Back\" "
+"button.\n"
+"The Drawer adjusts its layout depending on how you opened it - normally or "
+"via the bottom edge."
+msgstr ""
+"De onderste linkerrand is toegewezen aan de actie(s) aan de linkerkant van "
+"de werkbalk. Momenteel is dit ofwel de menuknop ofwel de terugknop.\n"
+"Het navigatiemenu past zich aan aan hoe je het geopend hebt - normaal of via "
+"de onderrand."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:44
+msgid "Right Bototm Edge"
+msgstr "Onderste rechterrand"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:45
+msgid ""
+"The right bottom edge is reserved to trigger the action(s) in the right side "
+"of the header. This can directly trigger the right action, if there's only "
+"one available, or it can show you a menu of available context-based actions "
+"that are present in the right side of the header.\n"
+"Tooltips and dialogs adjust their position depending on how you opened them "
+"- normally or via the bottom edge."
+msgstr ""
+"De onderste rechterrand is toegewezen aan de actie(s) aan de rechterkant van "
+"de werkbalk. Als er slechts één actie beschikbaar is, dan wordt deze direct "
+"uitgevoerd, anders wordt een contextmenu getoond.\n"
+"Hulpballonnen en dialoogvensters passen zich aan aan hoe je het geopend hebt "
+"- normaal of via de onderrand."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:48
+msgid "TRY THEM NOW!"
+msgstr "PROBEER HET NU!"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:49
+msgid ""
+"Swipe from the left bottom edge to go back.\n"
+"Swipe from the right bottom edge to see all the available Help pages."
+msgstr ""
+"Veeg vanaf de onderste linkerrand om terug te gaan.\n"
+"Veeg vanaf de onderste rechterrand om alle beschikbare hulppagina's te "
+"bekijken."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:55
+msgid "Reachability"
+msgstr "Bereikbaarheid"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:56
+msgid "This is totally not like Samsung's One UI 😂 "
+msgstr "Dit lijkt totaal níet op Samsung's One UI 😂 "
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:59
+msgid "List Views / Flickables"
+msgstr "Lijstweergaven/Scrollen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:60
+msgid ""
+"List Views / Flickables (scrollable contents) can be dragged down further "
+"when already at the top to increase the height of the header and make the "
+"upper controls reachable with ease.\n"
+"\n"
+"The header will return to normal when you move the list upwards."
+msgstr ""
+"In lijstweergaven (verschuifbare inhoud) kun je vanaf de bovenkant van de "
+"lijst naar beneden vegen om de werkbalkhoogte aan te passen en de bovenste "
+"bediening bereikbaar te maken."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:63
+msgid "TRY IT NOW!"
+msgstr "PROBEER HET NU!"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:64
+msgid ""
+"Drag this page down until you see the header cover almost half of the page "
+"and reach the button at the top."
+msgstr ""
+"Schuif deze pagina omlaag totdat je ziet dat de werkbalk bijna de halve "
+"pagina in beslag neemt en druk op de bovenste knop."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:143
+msgid "Settings Page"
+msgstr "Instellingenpagina"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:154
+msgid ""
+"Changes the theme of the app.\n"
+"Available themes: System, Ambiance and SuruDark System follows the current "
+"system theme"
+msgstr ""
+"Pas het appthema aan.\n"
+"Je kunt kiezen uit het systeemthema, Ambiance en SuruDonker."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:157
+msgid "Colored text"
+msgstr "Gekleurde tekst"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:158
+msgid "Option to enable or disable colored texts for values, dates, etc."
+msgstr "Schakel gekleurde tekst (waarden, datums, etc.) in of uit."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:166
+msgid "About Page"
+msgstr "Over-pagina"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:173
+msgid ""
+"This page contains all the details about the app and their corresponding "
+"links if applicable."
+msgstr "Deze pagina bevat alle details over de app en nuttige links."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:177
+msgid ""
+"In this section, you can get links to report a bug, contact the developer, "
+"view the app's source, DONATE to the develeoper, view the app in OpenStore, "
+"and view the developer's other apps."
+msgstr ""
+"In deze sectie vind je links om een bug te melden, contact op te nemen met "
+"de ontwikkelaar, de broncode te bekijken, een donatie te doen, de app te "
+"bekijken in OpenStore en andere apps van de ontwikkelaar te bekijken."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:181
+msgid ""
+"All involved developers, contributors and maintainers are listed here and "
+"the link to contact them."
+msgstr ""
+"Alle bijdragers (ontwikkelaars, beheerders, vertalers, etc.) staan op deze "
+"pagina genoemd, incl. een contactadres."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:185
+msgid "All 3rd party libraries that are used within the app is listed here."
+msgstr "Alle in de app gebruikte externe bibliotheken staan hier genoemd."
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:87
+msgid "Default"
+msgstr "Standaard"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:94
+msgid "Urine"
+msgstr "Urine"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:94
+msgid "Volume of urine"
+msgstr "Je hoeveelheid urine"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:96
+msgid "Blood Pressure"
+msgstr "Bloeddruk"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:96
+msgid "Pressure of the blood"
+msgstr "Je bloeddruk"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:98
+msgid "Oxygen"
+msgstr "Zuurstof"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:98
+msgid "Oxygen level in the blood"
+msgstr "Het zuurstofgehalte in je bloed"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:100
+msgid "Heart Rate"
+msgstr "Hartslag"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:100
+msgid "Rate of heart beats"
+msgstr "Het aantal hartslagen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:102
+msgid "Blood Sugar"
+msgstr "Bloedsuiker"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:102
+msgid "Sugar level in the blood"
+msgstr "Het bloedsuikerniveau"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:104
+msgid "Temperature"
+msgstr "Temperatuur"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:104
+msgid "Temperature of the body"
+msgstr "Je lichaamstemperatuur"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:138
+msgid "Systolic"
+msgstr "Systolisch"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:140
+msgid "Diastolic"
+msgstr "Diastolisch"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:218
+msgid "Today's Total"
+msgstr "Totaal (vandaag)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:220
+msgid "This week's Total"
+msgstr "Totaal (afgelopen week)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:222
+msgid "Recent Total"
+msgstr "Totaal (recent)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:227
+msgid "Today's Average"
+msgstr "Gemiddelde (vandaag)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:229
+msgid "This Week's Average"
+msgstr "Gemiddelde (afgelopen week)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:232
+msgid "Recent Daily Average"
+msgstr "Dagelijks gemiddelde (recent)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:234
+msgid "Recent Average"
+msgstr "Gemiddelde (recent)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:243
+msgid "Highest Today"
+msgstr "Hoogste (vandaag)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:245
+msgid "Highest This Week"
+msgstr "Hoogste (deze week)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:247
+msgid "Highest Recently"
+msgstr "Hoogste (recent)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:130
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:168
+msgid "Yesterday"
+msgstr "Gisteren"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:165
+msgid "Today"
+msgstr "Vandaag"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:171
+msgid "Tomorrow"
+msgstr "Morgen"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:174
+msgid "On "
+msgstr "Op "
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:177
+msgid "Last Week"
+msgstr "Vorige week"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:180
+msgid "Next Week"
+msgstr "Volgende week"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:183
+msgid "Last Month"
+msgstr "Afgelopen maand"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:186
+msgid "Next Month"
+msgstr "Volgende maand"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:189
+msgid "This Month"
+msgstr "Deze maand"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:192
+msgid "Older"
+msgstr "Ouder"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:195
+msgid "In The Future"
+msgstr "Toekomstig"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/aarch64-linux-gnu/app/subaybay/subaybay.desktop.h:1
+msgid "Subaybay"
+msgstr "Subaybay"
