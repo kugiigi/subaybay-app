@@ -33,11 +33,22 @@ import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
 import QtQuick.Controls.Suru 2.2
 import Ubuntu.Components 1.3 as UT
+import QtFeedback 5.0
 
 ColumnLayout {
     id: root
 
     property date date
+
+    HapticsEffect {
+        id: pressEffect
+        attackIntensity: 0.0
+        attackTime: 50
+        intensity: 1.0
+        duration: 10
+        fadeTime: 50
+        fadeIntensity: 0.0
+    }
 
     RowLayout {
         Layout.fillWidth: true
@@ -51,6 +62,7 @@ ColumnLayout {
                     var newDate = new Date(root.date)
                     newDate.setMonth(root.date.getMonth() - 1)
                     root.date = newDate
+                    pressEffect.start()
                 }
             }
         }
@@ -71,6 +83,7 @@ ColumnLayout {
                     var newDate = new Date(root.date)
                     newDate.setMonth(root.date.getMonth() + 1)
                     root.date = newDate
+                    pressEffect.start()
                 }
             }
         }
@@ -161,6 +174,7 @@ ColumnLayout {
                         var newDate = new Date(root.date)
                         newDate.setDate(dayOfMonth)
                         root.date = newDate
+                        pressEffect.start()
                     }
                 }
             }

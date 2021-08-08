@@ -15,6 +15,15 @@ CustomPopup {
     standardButtons: Dialog.NoButton
     closePolicy: Popup.CloseOnEscape
     
+    function openWithInitial(itemId) {
+        openPopup()
+        if (itemId !== "all") {
+            var temp = activeItems.slice()
+            temp.push(itemId)
+            activeItems = temp.slice()
+        }
+    }
+    
     function reset() {
         // Reset values
         activeItems = []

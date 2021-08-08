@@ -18,6 +18,31 @@ String.prototype.bindValues = function (charBind, arrValues) {
     return txtNewString
 }
 
+function scrollToView(item, flickable, topMargin,  bottomMargin) {
+    var mappedY
+    var itemHeightY
+    var currentViewport
+    var intendedContentY
+    var maxContentY
+
+    mappedY = item.mapToItem(flickable.contentItem, 0, 0).y
+    itemHeightY = mappedY + item.height
+    currentViewport = flickable.contentY - flickable.originY + flickable.height
+
+    if (itemHeightY > currentViewport) {
+        maxContentY = flickable.contentHeight - flickable.height
+        intendedContentY = itemHeightY - flickable.height + commentTextArea.height + (bottomMargin ? bottomMargin : 0)
+
+        if (intendedContentY > maxContentY) {
+            flickable.contentY = maxContentY
+        } else {
+            flickable.contentY = intendedContentY
+        }
+    } else if (mappedY < flickable.contentY) {
+        flickable.contentY = mappedY - (topMargin ? topMargin : 0)
+    }
+}
+
 function round_number(num, dec) {
     return Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
 }

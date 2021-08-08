@@ -15,43 +15,44 @@ Rectangle {
 	//This will make the radius shown only on the right side
 	Rectangle { color: parent.color; anchors.fill: parent; anchors.rightMargin: parent.radius }
 	ColumnLayout {
-	  spacing: 0
-	  anchors {
-	    top: parent.top
-	    topMargin: buttonsMargin
-	    bottom: parent.bottom
-	    bottomMargin: buttonsMargin
-	    left: parent.left
-	    right: parent.right
-	  }
+        spacing: 0
+        anchors {
+        top: parent.top
+        topMargin: buttonsMargin
+        bottom: parent.bottom
+        bottomMargin: buttonsMargin
+        left: parent.left
+        right: parent.right
+        }
 
-  	ColumnLayout {
-  		id: negativeColumn
+        ColumnLayout {
+            id: negativeColumn
 
-      Layout.fillWidth: true
-  		Layout.fillHeight: true
-  		
-  		// ActionButton {
-  		// 	iconName: "non-starred" //"delete"
-  		// 	onClicked: confirmDelete(index)
-  		// }
-  	}
-  	
-  	ColumnLayout {
-  		id: positiveColumn
+          Layout.fillWidth: true
+            Layout.fillHeight: true
+        }
+        
+        ColumnLayout {
+            id: positiveColumn
 
-      Layout.fillWidth: true
-  		Layout.fillHeight: true
-  		
-  		spacing: 7
-  		
-  		ActionButton {
-  		  Layout.fillHeight: true
-        Layout.fillWidth: true
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            
+            spacing: 7
+            
+            ActionButton {
+                Layout.fillHeight: true
+                Layout.fillWidth: true
 
-  		  iconName: "add"
-  			onClicked: mainPage.newEntry(monitorItemsDelegate.itemId)
-  		}
-  	}
-  }
+                iconName: "add"
+                onClicked: {
+                    if (monitorItemsDelegate.itemId === "all") {
+                        newEntrySelection.openPopup()
+                    } else {
+                        mainPage.newEntry(monitorItemsDelegate.itemId)
+                    }
+                }
+            }
+        }
+    }
 }

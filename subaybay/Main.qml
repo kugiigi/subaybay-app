@@ -5,6 +5,7 @@ import Ubuntu.Components.Themes.Ambiance 1.3 as Ambiance
 import Ubuntu.Components.Themes.SuruDark 1.3 as SuruDark
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
+import UserMetrics 0.1
 import Ubuntu.Components 1.3 as UT
 import "library/database.js" as Data
 import "library/dataUtils.js" as DataUtils
@@ -18,7 +19,7 @@ ApplicationWindow {
     id: mainView
 
     readonly property QtObject drawer: drawerLoader.item
-    readonly property string current_version: "1.2"
+    readonly property string current_version: "1.3"
     readonly property var suruTheme: switch(settings.currentTheme) {
             case "System":
                 undefined
@@ -101,6 +102,17 @@ ApplicationWindow {
         if (!Functions.isToday(currentDate)) {
             currentDate = Functions.getToday()
         }
+    }
+
+    Metric {
+        id: userMetric
+        
+        property string circleMetric
+
+        name: "lastValues"
+        format: circleMetric
+        emptyFormat: i18n.tr("No monitoring data for today")
+        domain: "subaybay.kugiigi"
     }
     
     MainView {

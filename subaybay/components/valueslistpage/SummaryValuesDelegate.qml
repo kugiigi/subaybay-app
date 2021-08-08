@@ -11,7 +11,6 @@ CustomButton {
 
     property alias valuesModel: valuesRepeater.model
     property bool expanded: false
-    property string unit
     
     readonly property bool multipleValues: valuesModel && valuesModel.length > 1 ? true : false
 
@@ -33,6 +32,7 @@ CustomButton {
     function getFormattedValues(data) {
         var formattedText = ""
         var value = data.value
+        var unit = data.unit
         
         if (value) {
             switch(data.value_type) {
@@ -86,6 +86,7 @@ CustomButton {
 
         anchors {
             top: parent.top
+            topMargin: expandIcon.visible ? 0 : content.spacing
             left: parent.left
             leftMargin: Suru.units.gu(2)
             right: parent.right
@@ -93,6 +94,8 @@ CustomButton {
         }
 
         UT.Icon {
+            id: expandIcon
+
             Layout.alignment: Qt.AlignCenter
             name: summaryValues.expanded ? "go-down" : "go-up"
             implicitWidth: Suru.units.gu(3)

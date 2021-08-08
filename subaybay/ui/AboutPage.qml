@@ -89,6 +89,7 @@ BasePage {
                 append({"section": i18n.tr("Support"), "text": i18n.tr("Other apps by the developer"), "subText": "", "icon": "stock_application", "urlText": "https://open-store.io/?search=author%3AKugi%20Eusebio"})
                 append({"section": i18n.tr("Developers"), "text": "Kugi Eusebio", "subText": i18n.tr("Main developer"), "icon": "", "urlText": "https://github.com/kugiigi"})
                 append({"section": i18n.tr("Powered by"), "text": "moment.js", "subText": i18n.tr("Date and Time manipulation and formatting"), "icon": "", "urlText": "http://momentjs.com/"})
+                append({"section": i18n.tr("Powered by"), "text": "Nymea app components", "subText": i18n.tr("Date and time pickers"), "icon": "", "urlText": "https://github.com/nymea/nymea-app"})
             }
         }
     }

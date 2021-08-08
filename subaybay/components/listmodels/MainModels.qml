@@ -48,6 +48,7 @@ Item{
                 break;
             case "Dashboard":
                 dashboardModel.loadingStatus = "Ready"
+                dashboardModel.updateUserMetric()
                 break;
             }
         }
@@ -128,6 +129,57 @@ Item{
         
         function refresh() {
             fillData(mainView.values.dashList())
+        }
+
+        function updateUserMetric() {
+            var curItem, curValue
+            var valItems = []
+            var msgItem
+            var circleMessage
+            var firstChar
+            var valueText
+
+            for (var i = 0; i < count; i++) {
+                curItem = get(i)
+
+                for (var h = 0; h < curItem.items.count; h++) {
+                    curValue = curItem.items.get(h)
+                    firstChar = curValue.title.charAt(0)
+
+                    // Only add values from today
+                    if (curItem.itemId !== "all" && curValue.type == "last" && firstChar >= "0" && firstChar <= "9") {
+                        valItems.push({ "name": curItem.displayName, "title": curValue.title, "value": curValue.value + " " + curItem.displaySymbol })
+                    }
+                }
+            }
+            
+            for (var k = 0; k < valItems.length; k++) {
+                msgItem = valItems[k]
+                if (settings.coloredText) {
+                    valueText = ("<font color=\"#FF19b6ee\">%1</font><br>%3 <font color=\"#FF3eb34f\">%2</font>").arg(msgItem.name).arg(msgItem.value).arg(msgItem.title)
+                } else {
+                    valueText = ("%1:\n%3 %2 ").arg(msgItem.name).arg(msgItem.value).arg(msgItem.title)                    
+                }
+
+                
+
+                if (circleMessage) {
+                    if (settings.coloredText) {
+                        circleMessage = circleMessage + "<br>" + valueText
+                    } else {
+                        circleMessage = circleMessage + "\n" + valueText
+                    }
+
+                    
+                } else {
+                    circleMessage = valueText
+                }
+            }
+
+            if (circleMessage) {
+                userMetric.circleMetric = circleMessage
+                userMetric.increment(1)
+            }
         }
     }
 

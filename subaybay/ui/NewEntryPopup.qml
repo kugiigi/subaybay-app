@@ -245,11 +245,15 @@ CustomPopup {
             }
             
             ColumnLayout {
+                id: commentColumn
+
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
                 Layout.rightMargin: 20
 
                 Label {
+                    id: commentLabel
+
                     Layout.fillWidth: true
                     text: i18n.tr("Comments/Observations")
                     Suru.textLevel: Suru.HeadingThree
@@ -260,6 +264,11 @@ CustomPopup {
             
                     Layout.fillWidth: true
                     font.pixelSize: 15
+                    onFocusChanged: {
+                        if (focus) {
+                            Functions.scrollToView(this, flickable, commentLabel.height + commentColumn.spacing, 0)
+                        }
+                    }
                 }
             }
         }

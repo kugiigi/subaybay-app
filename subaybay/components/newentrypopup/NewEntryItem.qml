@@ -4,6 +4,7 @@ import QtQuick.Controls.Suru 2.2
 import Ubuntu.Components 1.3 as UT
 import QtQuick.Layouts 1.12
 import "../common"
+import "../../library/functions.js" as Functions
 
 ColumnLayout {
     id: newEntryItem
@@ -24,33 +25,13 @@ ColumnLayout {
     
     function focusNext(item) {
         var nextItem = item.nextItemInFocusChain(true)
-        var mappedY
-        var itemHeightY
-        var currentViewport
-        var intendedContentY
-        var maxContentY
 
         nextItem.focus = true
-
-        mappedY = nextItem.mapToItem(flickable.contentItem, 0, 0).y
-        itemHeightY = mappedY + item.height
-        currentViewport = flickable.contentY - flickable.originY + flickable.height
-
-        if (itemHeightY > currentViewport) {
-            maxContentY = flickable.contentHeight - flickable.height
-            // intendedContentY = flickable.contentY + itemHeightY - currentViewport - flickable.originY
-            intendedContentY = itemHeightY - flickable.height + commentTextArea.height
-
-            if (intendedContentY > maxContentY) {
-                flickable.contentY = maxContentY
-            } else {
-                flickable.contentY = intendedContentY
-            }
-        }
-
     }
 
     RowLayout {
+        id: labelRow
+
         Layout.fillWidth: true
 
         CustomLabel {
@@ -99,6 +80,13 @@ ColumnLayout {
                 font.pixelSize: 20
                 horizontalAlignment: TextInput.AlignHCenter
                 Keys.onReturnPressed: newEntryItem.focusNext(this)
+                onFocusChanged: {
+                    if (focus) {
+                        var labelY = labelRow.mapToItem(flickable.contentItem, 0, 0).y
+                        var itemY = mapToItem(flickable.contentItem, 0, 0).y
+                        Functions.scrollToView(this, flickable, itemY - labelY, 0)
+                    }
+                }
             }
       
             Label {
