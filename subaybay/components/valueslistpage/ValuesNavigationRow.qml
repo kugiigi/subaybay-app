@@ -11,6 +11,7 @@ RowLayout {
     property alias itemTitle: itemLabel.text
     property alias dateTitle: dateLabel.text
     property alias scopeTItle: scopeLabel.text
+    property bool biggerDateLabel: true
     
     signal criteria
     signal next
@@ -46,7 +47,7 @@ RowLayout {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 Layout.alignment: Qt.AlignBaseline
-                Suru.textLevel: Suru.HeadingOne
+                Suru.textLevel: navigationRow.biggerDateLabel ? Suru.HeadingThree : Suru.HeadingOne
                 role: "item"
             }
 
@@ -60,7 +61,7 @@ RowLayout {
                     Layout.fillWidth: true
                     Layout.alignment: Qt.AlignBaseline
                     Suru.textLevel: Suru.HeadingTwo
-                    font.pointSize: Suru.units.gu(2)
+                    font.pointSize: navigationRow.biggerDateLabel ? Suru.units.gu(2.5) : Suru.units.gu(2)
                     font.italic: true
                     role: "date"
                 }

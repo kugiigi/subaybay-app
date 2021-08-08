@@ -51,7 +51,9 @@ var dataUtils = dataUtils || (function (undefined) {
                     return Database.getItemsFields();
                 }
                 , dashList: function() {
-                    return Database.getDashItems();
+                    var arrResults = Database.getDashItems();
+                    arrResults.unshift({ item_id: "all", display_name: i18n.tr("All"), display_format: "", unit: "", display_symbol: "", value_type: "", scope: "" })
+                    return arrResults
                 }
             }
         })()
@@ -180,16 +182,31 @@ var dataUtils = dataUtils || (function (undefined) {
                         }
 
                         title = this.getValueLabel(valueType, dateScope, grouping, entryDate);
-                        currentItem = { title: title, value: value };
+                        currentItem = { type: valueType, title: title, value: value, unit: current.display_symbol };
                         
                         if (currentItemId !== prevItemId) {
-                            current.items = [currentItem];
+                            if (currentItemId !== "all") {
+                                current.items = [currentItem];
+                            }
+                            if (valueType == "last") {
+                                currentItems = arrResults[0].items;
+                                if (currentItems) {
+                                    currentItems.push(currentItem);
+                                    arrResults[0].items = currentItems;
+                                } else {
+                                    arrResults[0].items = [currentItem];
+                                }
+                            }
                             arrResults.push(current);
                         } else {
                             currentIndex = arrResults.length - 1;
                             currentItems = arrResults[currentIndex].items;
                             currentItems.push(currentItem);
                             arrResults[currentIndex].items = currentItems;
+
+                            if (valueType == "last") {
+                                arrResults[0].items = currentItems;
+                            }
                         }
                         
                         prevItemId = currentItemId;

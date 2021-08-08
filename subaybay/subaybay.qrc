@@ -39,6 +39,7 @@
         <file>components/common/ActionButton.qml</file>
         <file>components/common/ContextMenu.qml</file>
         <file>components/common/CustomDialogButton.qml</file>
+        <file>components/common/CustomItemDelegate.qml</file>
         <file>components/common/EmptyState.qml</file>
         <file>components/common/LoadingComponent.qml</file>
         <file>components/common/DeleteConfirmDialog.qml</file>

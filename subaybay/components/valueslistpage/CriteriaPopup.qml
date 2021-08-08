@@ -54,6 +54,25 @@ CustomPopup {
         ButtonGroup {
             id: criteriaGroup
         }
+        
+        RadioDelegate {
+            id: allRadioItem
+
+            anchors {
+               left: parent.left
+               right: parent.right
+            }
+            text: i18n.tr("All")
+            checked: criteriaPopup.activeItemId == "all"
+            ButtonGroup.group: criteriaGroup
+            
+            onToggled: {
+                if (checked) {
+                    criteriaPopup.activeItemId = "all"
+                }
+            }
+
+        }
   
         ListView {
             id: profilesListView
@@ -62,7 +81,7 @@ CustomPopup {
   
             model: mainView.mainModels.monitorItemsModel
             anchors {
-                top: parent.top
+                top: allRadioItem.bottom
                 left: parent.left
                 right: parent.right
                 bottom: parent.bottom

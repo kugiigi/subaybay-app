@@ -110,15 +110,17 @@ WorkerScript.onMessage = function (msg) {
         case "Values_1":
         case "Values_2":
         case "Values_3":
-            txtDisplayFormat = msg.properties.displayFormat
             dashItems = msg.properties.dashItems
 
             for (var i = 0; i < msg.result.length; i++) {
                 txtEntryDate = msg.result[i].entry_date
+                txtDisplayName = msg.result[i].display_name
                 txtItemId = msg.result[i].item_id
                 txtFieldId = msg.result[i].field_id
                 intPrecision = msg.result[i].precision
                 intFieldSeq = msg.result[i].field_seq
+                txtSymbol = msg.result[i].display_symbol
+                txtDisplayFormat = msg.result[i].display_format
 
                 realValue = round(msg.result[i].value, intPrecision)
                 txtComments = msg.result[i].comments
@@ -130,7 +132,7 @@ WorkerScript.onMessage = function (msg) {
                 txtFormattedEntryDate = moment(txtEntryDate).format("hh:mm A")
                 realValue = round(realValue, intPrecision)
                 
-                if (currentEntryDate !== prevEntryDate) {
+                if (currentEntryDate !== prevEntryDate || currentItemId !== prevItemId) {
                     total = total + realValue
                     valueCount += 1
                     txtFormattedValue = formatValue(txtDisplayFormat, intFieldSeq, realValue)
@@ -149,21 +151,25 @@ WorkerScript.onMessage = function (msg) {
                     msg.model.append({
                                          entryDate: txtFormattedEntryDate
                                          , entryDateId: txtEntryDate
+                                         , itemName: txtDisplayName
                                          , itemId: txtItemId
                                          , fields:  [ { fieldId: txtFieldId, value: realValue } ]
                                          , values: txtFormattedValue
+                                         , unit: txtSymbol
                                          , comments: txtComments
                                      })
                 } else {
-                    currentIndex = msg.model.count - 1
-                    txtDisplayFormatWithValue = msg.model.get(currentIndex).values
-                    txtFormattedValue  = formatValue(txtDisplayFormatWithValue, intFieldSeq, realValue)
+                    if (currentItemId == prevItemId) {
+                        currentIndex = msg.model.count - 1
+                        txtDisplayFormatWithValue = msg.model.get(currentIndex).values
+                        txtFormattedValue  = formatValue(txtDisplayFormatWithValue, intFieldSeq, realValue)
 
-                    last = { entryDate: txtFormattedEntryDate, value: txtFormattedValue }
+                        last = { entryDate: txtFormattedEntryDate, value: txtFormattedValue }
 
-                    modelFields = msg.model.get(currentIndex).fields
-                    modelFields.append( { fieldId: txtFieldId, value: realValue })
-                    msg.model.setProperty(currentIndex, "values", txtFormattedValue)
+                        modelFields = msg.model.get(currentIndex).fields
+                        modelFields.append( { fieldId: txtFieldId, value: realValue })
+                        msg.model.setProperty(currentIndex, "values", txtFormattedValue)
+                    }
                 }
 
                 prevEntryDate = currentEntryDate
@@ -175,19 +181,19 @@ WorkerScript.onMessage = function (msg) {
             average = round(total / valueCount, intPrecision)
 
             if (dashItems.indexOf("total") > -1) {
-                result.push( { value_type: "total", value: total } )
+                result.push( { value_type: "total", value: total, unit: txtSymbol } )
             }
 
             if (dashItems.indexOf("average") > -1) {
-                result.push( { value_type: "average", value: average } )
+                result.push( { value_type: "average", value: average, unit: txtSymbol } )
             }
             
             if (dashItems.indexOf("last") > -1) {
-                result.push( { value_type: "last", value: last } )
+                result.push( { value_type: "last", value: last, unit: txtSymbol } )
             }
             
             if (dashItems.indexOf("highest") > -1) {
-                result.push( { value_type: "highest", value: highest } )
+                result.push( { value_type: "highest", value: highest, unit: txtSymbol } )
             }
 
             break;

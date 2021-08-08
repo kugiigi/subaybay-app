@@ -67,7 +67,6 @@ BasePage {
     ListView {
         id: listView
 
-        // snapMode: ListView.SnapToItem 
         boundsBehavior: Flickable.DragOverBounds
         
         anchors{

@@ -10,8 +10,6 @@ import "../library/functions.js" as Functions
 BasePage {
     id: valuesListPage
 
-    readonly property string unit: mainView.mainModels.monitorItemsModel.getItem(itemId, "itemId").displaySymbol
-    readonly property string displayFormat: mainView.mainModels.monitorItemsModel.getItem(itemId, "itemId").displayFormat
     readonly property bool isToday: Functions.isToday(dateViewPath.currentItem.fromDate)
     property string currentDate: Functions.getToday()
 
@@ -59,7 +57,7 @@ BasePage {
     }
 
     function newEntry() {
-        newEntryPopup.openDialog(itemId)
+        newEntrySelection.openWithInitial(itemId)
     }
     
     function goToday() {
@@ -155,7 +153,7 @@ BasePage {
         id: deleteConfirmDialog
 
         title: i18n.tr("Delete this value?")
-        subtitle: ("%1 - %2 %3").arg(contextMenu.itemProperties.entryDate).arg(contextMenu.itemProperties.value).arg(valuesListPage.unit)
+        subtitle: ("%1 - %2 %3").arg(contextMenu.itemProperties.entryDate).arg(contextMenu.itemProperties.value).arg(contextMenu.itemProperties.unit)
         onAccepted: {
             var result = mainView.values.delete(contextMenu.itemProperties.entryDateId, contextMenu.itemProperties.itemId)
             var tooltipMsg
@@ -174,7 +172,7 @@ BasePage {
     ContextMenu {
         id: contextMenu
 
-        itemProperties: { "entryDateId": "", "entryDate": "", "fields": "", "itemId": "", "value": "", "comments": "" }
+        itemProperties: { "entryDateId": "", "entryDate": "", "fields": "", "itemId": "", "value": "", "comments": "", "unit": "" }
 
         actions: [editAction, separatorAction, deleteAction]
         listView: dateViewPath.currentItem.view
@@ -214,7 +212,8 @@ BasePage {
             Layout.maximumHeight: 90
             z: 1
 
-            itemTitle: mainView.mainModels.monitorItemsModel.getItem(valuesListPage.itemId, "itemId").displayName
+            biggerDateLabel: valuesListPage.itemId === "all"
+            itemTitle: valuesListPage.itemId === "all" ? i18n.tr("All") : mainView.mainModels.monitorItemsModel.getItem(valuesListPage.itemId, "itemId").displayName
 
             onCriteria: criteriaPopup.openPopup()
             onNext: valuesListPage.next()
@@ -250,7 +249,7 @@ BasePage {
                 width: parent.width
 
                 function loadData() {
-                    listView.model.load(valuesListPage.itemId, valuesListPage.displayFormat, valuesListPage.scope, fromDate, fromDate)
+                    listView.model.load(valuesListPage.itemId, valuesListPage.scope, fromDate, fromDate)
                 }
                 
                 onFromDateChanged: {
@@ -282,6 +281,38 @@ BasePage {
                     focus: true
                     currentIndex: -1
                     visible: model.ready
+                    section.property: valuesListPage.itemId === "all" ? "entryDate" : ""
+                    section.delegate: Rectangle {
+                                        color: "transparent"
+                                        height: units.gu(4)
+
+                                        anchors {
+                                            left: parent.left
+                                            right: parent.right
+                                        }
+                                        
+                                        Rectangle {
+                                            id: dividerRec
+
+                                            anchors.bottom: parent.bottom
+                                            width: parent.width
+                                            height: Suru.units.dp(1)
+                                            color: Suru.neutralColor
+                                        }
+
+                                        RowLayout {
+                                            anchors.fill: parent
+
+                                            CustomLabel {
+                                                Layout.leftMargin: Suru.units.gu(2)
+                                                Suru.textLevel: Suru.HeadingThree
+                                                font.pointSize: 12
+                                                text: section
+                                                font.italic: true
+                                                role: "date"
+                                            }
+                                        }
+                                    }
           
                     model: mainModels.valuesListModels[index]
             
@@ -294,14 +325,15 @@ BasePage {
                         values: model.values
                         entryDate: model.entryDate
                         comments: model.comments
-                        unit: valuesListPage.unit
+                        unit: model.unit
+                        itemName: valuesListPage.itemId === "all" ? model.itemName : ""
                         highlighted: listView.currentIndex == index
 
                         onShowContextMenu: {
                             var itemProperties = { entryDateId: model.entryDateId
                                     , entryDate: model.entryDate, fields: model.fields
                                     , itemId: model.itemId, value: model.values
-                                    , comments: model.comments
+                                    , comments: model.comments, unit: model.unit
                             }
 
                             listView.currentIndex = index
@@ -326,9 +358,8 @@ BasePage {
             id: summaryValues
       
             valuesModel: dateViewPath.currentItem.model.summaryValues
-            visible: dateViewPath.currentItem.model.ready && dateViewPath.currentItem.model.count > 0
-            unit: valuesListPage.unit
-      
+            visible: valuesListPage.itemId !== "all" && dateViewPath.currentItem.model.ready && dateViewPath.currentItem.model.count > 0
+
             Layout.fillWidth: true
 
             NumberAnimation on opacity {

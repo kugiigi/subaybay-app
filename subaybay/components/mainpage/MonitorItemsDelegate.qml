@@ -71,7 +71,7 @@ CustomButton {
                         width: contentFlow.width > 250 ? (contentFlow.width - contentFlow.spacing) / 2 : contentFlow.width 
                         value: model.value
                         title: model.title
-                        unit: monitorItemsDelegate.unit
+                        unit: model.unit
                         visible: model.value !== ""
                     }
                 }

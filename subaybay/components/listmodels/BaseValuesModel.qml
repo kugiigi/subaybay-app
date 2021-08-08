@@ -21,9 +21,9 @@ BaseListModel {
         return dashItems
     }
 
-    function load(itemId, displayFormat, scope, dateFrom, dateTo) {
+    function load(itemId, scope, dateFrom, dateTo) {
         var dashItems = getDashItems(itemId);
-        properties = { displayFormat: displayFormat, dashItems: dashItems }
+        properties = { dashItems: dashItems }
         fillData(mainView.values.itemValues(itemId, scope, dateFrom, dateTo))
     }
 }
