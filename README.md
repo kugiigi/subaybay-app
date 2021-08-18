@@ -6,6 +6,10 @@ It is written with QML, C++ and JavaScript
 
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/subaybay.kugiigi)
 
+## Web Companion
+A web version of the app is available at https://kugiigi.github.io/subaybay-web/.
+It is view-only and can be useful for remote viewing of data.
+
 ## Building
 Simply use Clickable http://clickable.bhdouglass.com/en/latest/install.html
 
