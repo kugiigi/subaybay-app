@@ -470,7 +470,7 @@ function updateItemEntryDate(txtEntryDate, txtNewEntryDate, intProfileId) {
     txtSaveStatement = 'UPDATE monitor_items_values SET entry_date = strftime("%Y-%m-%d %H:%M:%f", ?, "utc") \
                         WHERE strftime("%Y-%m-%d %H:%M:%f", entry_date, "localtime") = strftime("%Y-%m-%d %H:%M:%f", ?) \
                         AND profile_id = ?'
-    txtSaveCommentStatement = "UPDATE monitor_items_comments SET entry_date = ? \
+    txtSaveCommentStatement = "UPDATE monitor_items_comments SET entry_date = strftime('%Y-%m-%d %H:%M:%f', ?, 'utc') \
                         WHERE strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime') = strftime('%Y-%m-%d %H:%M:%f', ?) \
                         AND profile_id = ?"
 
