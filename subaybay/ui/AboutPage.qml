@@ -81,6 +81,7 @@ BasePage {
             Component.onCompleted: fillData()
     
             function fillData(){
+                append({"section": i18n.tr("Companion"), "text": i18n.tr("Webapp"), "subText": "For viewing of data remotely", "icon": "stock_website", "urlText": "https://kugiigi.github.io/subaybay-web/"})
                 append({"section": i18n.tr("Support"), "text": i18n.tr("Report a bug"), "subText": "", "icon": "mail-mark-important", "urlText": "https://github.com/kugiigi/subaybay-app/issues"})
                 append({"section": i18n.tr("Support"), "text": i18n.tr("Contact Developer"), "subText": "", "icon": "stock_email", "urlText": "mailto:kugi_eusebio@protonmail.com"})
                 append({"section": i18n.tr("Support"), "text": i18n.tr("View source"), "subText": "", "icon": "stock_document", "urlText": "https://github.com/kugiigi/subaybay-app"})

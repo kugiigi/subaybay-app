@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-08 07:14+0000\n"
+"POT-Creation-Date: 2021-12-23 09:55+0000\n"
 "PO-Revision-Date: 2021-08-02 13:36+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -58,70 +58,78 @@ msgid "Okay"
 msgstr "Oké"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:84
+msgid "Companion"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:84
+msgid "Webapp"
+msgstr ""
+
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:85
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:86
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:87
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:88
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:89
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:90
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:176
 msgid "Support"
 msgstr "Ondersteuning"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:84
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:85
 msgid "Report a bug"
 msgstr "Bug melden"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:85
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:86
 msgid "Contact Developer"
 msgstr "Contact opnemen met ontwikkelaar"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:86
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:87
 msgid "View source"
 msgstr "Broncode bekijken"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:87
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:88
 msgid "Donate"
 msgstr "Doneren"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:88
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:89
 msgid "View in OpenStore"
 msgstr "Bekijken in OpenStore"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:89
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:90
 msgid "Other apps by the developer"
 msgstr "Andere apps van deze ontwikkelaar"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:90
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:91
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:180
 msgid "Developers"
 msgstr "Ontwikkelaars"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:90
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:91
 msgid "Main developer"
 msgstr "Hoofdontwikkelaar"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:91
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:92
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:93
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/data/help.js:184
 msgid "Powered by"
 msgstr "Aangedreven door"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:91
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:92
 msgid "Date and Time manipulation and formatting"
 msgstr "Datum- en tijdsaanpassing en -opmaak"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:92
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:93
 msgid "Date and time pickers"
 msgstr ""
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:23
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:117
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:121
 msgid "Switch Profile"
 msgstr "Ander profiel kiezen"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:34
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:86
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:82
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:90
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:86
 msgid "New Entry"
 msgstr "Nieuw item"
 
@@ -130,42 +138,46 @@ msgid "Updating data"
 msgstr "Bezig met bijwerken…"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:62
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:270
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:284
 msgid "Please wait"
 msgstr "Even geduld…"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:150
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:178
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
 msgid "Save"
 msgstr "Opslaan"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:158
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:186
 msgid "Value saved"
 msgstr "De waarde is opgeslagen"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:162
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:190
 msgid "Error saving data"
 msgstr "De gegevens kunnen niet worden opgeslagen"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:165
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:193
 msgid "Fill up all required fields"
 msgstr "Vul alle verplichte velden in"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:168
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:196
 msgid "Error"
 msgstr "Foutmelding"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:180
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:65
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:208
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:69
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:85
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:258
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:261
+msgid "**All entries with the same date/time will be updated"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:307
 msgid "Comments/Observations"
 msgstr "Opmerkingen/Waarnemingen"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:54
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:58
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
 msgid "Ok"
 msgstr "Oké"
@@ -184,17 +196,17 @@ msgid "Profile deleted"
 msgstr "Het profiel is verwijderd"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:30
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:165
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:171
 msgid "Error deleting"
 msgstr "Het verwijderen is mislukt"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:40
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:128
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:132
 msgid "Edit"
 msgstr "Aanpassen"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ProfilesPopup.qml:51
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:139
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:143
 msgid "Delete"
 msgstr "Verwijderen"
 
@@ -211,33 +223,37 @@ msgstr "Thema"
 msgid "Colored texts"
 msgstr "Gekleurde tekst"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:93
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:97
 msgid "View Today"
 msgstr "Ga naar vandaag"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:105
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:109
 msgid "Sort"
 msgstr "Sorteren"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:155
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:159
 msgid "Delete this value?"
 msgstr "Weet je zeker dat je deze waarde wilt verwijderen?"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:162
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:161
+msgid "Delete all with the same date/time"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:168
 msgid "Value deleted"
 msgstr "De waarde is verwijderd"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:216
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:230
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/CriteriaPopup.qml:65
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:55
 msgid "All"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:268
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:282
 msgid "No data"
 msgstr "Geen gegevens"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:269
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:283
 msgid "Loading data"
 msgstr "Bezig met laden van gegevens…"
 
@@ -281,7 +297,7 @@ msgstr "Naam"
 msgid "Code"
 msgstr "Code"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/newentrypopup/DateField.qml:29
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/newentrypopup/DateField.qml:31
 msgid "Use current date and time"
 msgstr "Huidige datum en tijd gebruiken"
 
@@ -312,6 +328,7 @@ msgid "Total"
 msgstr "Totaal"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/SummaryValuesDelegate.qml:65
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:262
 msgid "Average"
 msgstr "Gemiddeld"
 
@@ -623,92 +640,105 @@ msgstr "Systolisch"
 msgid "Diastolic"
 msgstr "Diastolisch"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:235
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:233
+msgid "Weight"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/database.js:233
+msgid "Body weight"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:247
 msgid "Today's Total"
 msgstr "Totaal (vandaag)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:237
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:249
 msgid "This week's Total"
 msgstr "Totaal (afgelopen week)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:239
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:251
 msgid "Recent Total"
 msgstr "Totaal (recent)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:244
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:256
 msgid "Today's Average"
 msgstr "Gemiddelde (vandaag)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:246
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:258
 msgid "This Week's Average"
 msgstr "Gemiddelde (afgelopen week)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:249
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:260
+#, fuzzy
+msgid "This Month's Average"
+msgstr "Gemiddelde (afgelopen week)"
+
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:265
 msgid "Recent Daily Average"
 msgstr "Dagelijks gemiddelde (recent)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:251
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:267
 msgid "Recent Average"
 msgstr "Gemiddelde (recent)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:260
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:276
 msgid "Highest Today"
 msgstr "Hoogste (vandaag)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:262
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:278
 msgid "Highest This Week"
 msgstr "Hoogste (deze week)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:264
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:280
 msgid "Highest Recently"
 msgstr "Hoogste (recent)"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:155
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:193
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:159
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:197
 msgid "Yesterday"
 msgstr "Gisteren"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:190
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:194
 msgid "Today"
 msgstr "Vandaag"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:196
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:200
 msgid "Tomorrow"
 msgstr "Morgen"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:199
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:203
 msgid "On "
 msgstr "Op "
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:202
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:206
 msgid "Last Week"
 msgstr "Vorige week"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:205
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:209
 msgid "Next Week"
 msgstr "Volgende week"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:208
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:212
 msgid "Last Month"
 msgstr "Afgelopen maand"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:211
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:215
 msgid "Next Month"
 msgstr "Volgende maand"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:214
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:218
 msgid "This Month"
 msgstr "Deze maand"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:217
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:221
 msgid "Older"
 msgstr "Ouder"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:220
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/functions.js:224
 msgid "In The Future"
 msgstr "Toekomstig"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/aarch64-linux-gnu/app/subaybay/subaybay.desktop.h:1
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/x86_64-linux-gnu/app/subaybay/subaybay.desktop.h:1
 msgid "Subaybay"
 msgstr "Subaybay"
 
