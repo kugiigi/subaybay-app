@@ -3,6 +3,7 @@ v.1.4
  - Set date of new entry based on the date of the current page
  - Added webapp URL in About page
  - Add ability to delete values inputted at the same time or with exactly the same entry date
+ - Add ability to update entry date
  - Minor layout changes
 
 v.1.3
