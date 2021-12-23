@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-23 12:36+0000\n"
+"POT-Creation-Date: 2021-12-23 14:01+0000\n"
 "PO-Revision-Date: 2021-08-02 13:36+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -142,38 +142,38 @@ msgstr "Bezig met bijwerken…"
 msgid "Please wait"
 msgstr "Even geduld…"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:178
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:179
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
 msgid "Save"
 msgstr "Opslaan"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:186
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:187
 msgid "Value saved"
 msgstr "De waarde is opgeslagen"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:190
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:191
 msgid "Error saving data"
 msgstr "De gegevens kunnen niet worden opgeslagen"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:193
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:194
 msgid "Fill up all required fields"
 msgstr "Vul alle verplichte velden in"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:196
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:197
 msgid "Error"
 msgstr "Foutmelding"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:208
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:209
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:72
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:85
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:261
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:262
 msgid "All entries with the same date/time will be updated"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:297
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:298
 msgid "Comments/Observations"
 msgstr "Opmerkingen/Waarnemingen"
 
@@ -738,7 +738,7 @@ msgstr "Ouder"
 msgid "In The Future"
 msgstr "Toekomstig"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/x86_64-linux-gnu/app/subaybay/subaybay.desktop.h:1
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/aarch64-linux-gnu/app/subaybay/subaybay.desktop.h:1
 msgid "Subaybay"
 msgstr "Subaybay"
 

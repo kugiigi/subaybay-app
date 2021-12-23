@@ -51,13 +51,14 @@ CustomPopup {
         reset()
 
         // Set date/time fields to current values
-        dateField.dateValue = entryDate
+        dateField.dateValue = Functions.convertDBToDate(entryDate)
         dateField.checkState = Qt.Unchecked
 
         priv.addItem(otherItemsMenu.model.getItem(itemId, "itemId"))
         priv.editEntryDate = entryDate
         priv.editItemId = itemId
         currentItem = fieldsModel.itemAt(0)
+
         for (var i = 0; i < fields.count; i++) {
             currentField = currentItem.fieldsRepeater.itemAt(i)
             value = fields.get(i).value
@@ -256,8 +257,8 @@ CustomPopup {
 
                 visible: newEntryPopup.editMode && priv.entryMultiple && dateField.dateModified
                 Layout.fillWidth: true
-                Layout.leftMargin: Suru.units.gu(2)
-                Layout.rightMargin: Suru.units.gu(2)
+                Layout.leftMargin: Suru.units.gu(3)
+                Layout.rightMargin: Suru.units.gu(3)
                 text: i18n.tr("All entries with the same date/time will be updated")
                 Suru.textLevel: Suru.Caption
             }
