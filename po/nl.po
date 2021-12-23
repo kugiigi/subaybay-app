@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-23 09:55+0000\n"
+"POT-Creation-Date: 2021-12-23 12:36+0000\n"
 "PO-Revision-Date: 2021-08-02 13:36+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -128,7 +128,7 @@ msgid "Switch Profile"
 msgstr "Ander profiel kiezen"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:34
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:90
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:93
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:86
 msgid "New Entry"
 msgstr "Nieuw item"
@@ -164,20 +164,20 @@ msgid "Error"
 msgstr "Foutmelding"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:208
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:69
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:72
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:85
 msgid "Cancel"
 msgstr "Annuleren"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:261
-msgid "**All entries with the same date/time will be updated"
+msgid "All entries with the same date/time will be updated"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:307
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:297
 msgid "Comments/Observations"
 msgstr "Opmerkingen/Waarnemingen"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:58
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntrySelectionPopup.qml:61
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/profilespopup/ProfileDialog.qml:76
 msgid "Ok"
 msgstr "Oké"

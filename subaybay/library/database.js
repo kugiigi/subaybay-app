@@ -647,7 +647,7 @@ function deleteValue(intProfileId, txtEntryDate, txtItemId, deleteAll) {
     try {
         db.transaction(function (tx) {
             if (deleteAll) {
-                txtSqlStatement = 'DELETE FROM monitor_items_values WHERE profile_id = ? AND entry_date = ?'
+                txtSqlStatement = 'DELETE FROM monitor_items_values WHERE profile_id = ? AND strftime("%Y-%m-%d %H:%M:%f", entry_date, "localtime") = strftime("%Y-%m-%d %H:%M:%f", ?)'
                 tx.executeSql(txtSqlStatement, [intProfileId, txtEntryDate])
             } else {
                 txtSqlStatement = 'DELETE FROM monitor_items_values WHERE profile_id = ? AND strftime("%Y-%m-%d %H:%M:%f", entry_date, "localtime") = strftime("%Y-%m-%d %H:%M:%f", ?) AND item_id = ?'

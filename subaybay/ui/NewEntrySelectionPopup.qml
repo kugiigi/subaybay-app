@@ -20,7 +20,10 @@ CustomPopup {
         openPopup()
         if (customDate) {
             customDatePlaceHolder = customDate
+        } else {
+            customDatePlaceHolder = ""
         }
+
         if (itemId !== "all") {
             var temp = activeItems.slice()
             temp.push(itemId)

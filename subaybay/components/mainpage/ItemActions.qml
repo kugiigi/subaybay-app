@@ -17,12 +17,12 @@ Rectangle {
 	ColumnLayout {
         spacing: 0
         anchors {
-        top: parent.top
-        topMargin: buttonsMargin
-        bottom: parent.bottom
-        bottomMargin: buttonsMargin
-        left: parent.left
-        right: parent.right
+            top: parent.top
+            topMargin: buttonsMargin
+            bottom: parent.bottom
+            bottomMargin: buttonsMargin
+            left: parent.left
+            right: parent.right
         }
 
         ColumnLayout {
@@ -47,7 +47,7 @@ Rectangle {
                 iconName: "add"
                 onClicked: {
                     if (monitorItemsDelegate.itemId === "all") {
-                        newEntrySelection.openPopup()
+                        newEntrySelection.openWithInitial("all")
                     } else {
                         mainPage.newEntry(monitorItemsDelegate.itemId)
                     }
