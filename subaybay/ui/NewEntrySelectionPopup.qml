@@ -9,14 +9,21 @@ CustomPopup {
     id: newEntrySelection
 
     readonly property bool allSelected: monitorItemsListView.model.count == activeItems.length
+    property string customDatePlaceHolder
 
     property var activeItems: []
   
     standardButtons: Dialog.NoButton
     closePolicy: Popup.CloseOnEscape
     
-    function openWithInitial(itemId) {
+    function openWithInitial(itemId, customDate) {
         openPopup()
+        if (customDate) {
+            customDatePlaceHolder = customDate
+        } else {
+            customDatePlaceHolder = ""
+        }
+
         if (itemId !== "all") {
             var temp = activeItems.slice()
             temp.push(itemId)
@@ -45,7 +52,7 @@ CustomPopup {
 
     onAboutToShow: reset()
     
-    onAccepted: newEntryPopup.openDialog(activeItems)
+    onAccepted: newEntryPopup.openDialog(activeItems, customDatePlaceHolder)
     
     footer: DialogButtonBox {
         CustomDialogButton {

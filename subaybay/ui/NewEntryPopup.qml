@@ -20,7 +20,7 @@ CustomPopup {
         fieldsModel.itemAt(0).focusFirstField()
     }
 
-    function openDialog(itemId) {
+    function openDialog(itemId, customDate) {
         editMode = false
         reset()
         
@@ -30,6 +30,14 @@ CustomPopup {
             }
         } else {
             priv.addItem(otherItemsMenu.model.getItem(itemId, "itemId"))
+        }
+
+        if (customDate) {
+            dateField.dateValue = Functions.convertDBToDate(customDate)
+            dateField.checkState = Qt.Unchecked
+        } else {
+            dateField.dateValue = new Date()
+            dateField.checkState = Qt.Checked
         }
         
         openPopup()
@@ -42,9 +50,15 @@ CustomPopup {
         editMode = true
         reset()
 
+        // Set date/time fields to current values
+        dateField.dateValue = Functions.convertDBToDate(entryDate)
+        dateField.checkState = Qt.Unchecked
+
         priv.addItem(otherItemsMenu.model.getItem(itemId, "itemId"))
         priv.editEntryDate = entryDate
+        priv.editItemId = itemId
         currentItem = fieldsModel.itemAt(0)
+
         for (var i = 0; i < fields.count; i++) {
             currentField = currentItem.fieldsRepeater.itemAt(i)
             value = fields.get(i).value
@@ -72,6 +86,9 @@ CustomPopup {
         id: priv
         
         property string editEntryDate
+        property bool entryMultiple: mainView.values.entryDateMultiple(editEntryDate, editItemId)
+        property date entryDate
+        property string editItemId
 
         function submitData() {
             keyboard.target.commit()
@@ -84,12 +101,15 @@ CustomPopup {
 
 
             if (newEntryPopup.editMode) {
-                entryDate = priv.editEntryDate
+                if (dateField.dateModified) {
+                    entryDate = Functions.formatDateForDB(dateField.dateValue)
+                } else {
+                    entryDate = priv.editEntryDate
+                }
             } else {
                 entryDate = dateField.checked ? new Date() : dateField.dateValue
+                entryDate = Functions.formatDateForDB(entryDate)
             }
-
-            entryDate = Functions.formatDateForDB(entryDate)
 
             for (var i = 0; i < fieldsModel.count; i++) {
                 currentItem = fieldsModel.itemAt(i)
@@ -111,13 +131,20 @@ CustomPopup {
             
             for (var k = 0; k < valuesToSave.length; k++) {
                 if (newEntryPopup.editMode) {
-                    if (mainView.values.edit(entryDate, valuesToSave[k].fieldId, valuesToSave[k].itemId, valuesToSave[k].value).success == false) {
+                    if (mainView.values.edit(priv.editEntryDate, valuesToSave[k].fieldId, valuesToSave[k].itemId, valuesToSave[k].value).success == false) {
                         return "database"
                     }
                 } else {
                     if (mainView.values.add(entryDate, valuesToSave[k].fieldId, valuesToSave[k].itemId, valuesToSave[k].value).success == false) {
                         return "database"
                     }
+                }
+            }
+
+            // Updates entry date when modified by the user
+            if (dateField.dateModified) {
+                if (mainView.values.editEntryDate(priv.editEntryDate, entryDate).success == false) {
+                    return "database"
                 }
             }
 
@@ -140,7 +167,9 @@ CustomPopup {
     header: DateField {
         id: dateField
 
-        visible: !newEntryPopup.editMode
+        readonly property bool dateModified: priv.editEntryDate != Functions.formatDateForDB(dateField.dateValue)
+
+        showToggle: !newEntryPopup.editMode
     }
 
     footer: DialogButtonBox {
@@ -222,7 +251,18 @@ CustomPopup {
             }
       
             spacing: 20
-      
+
+            Label {
+                id: warningLabel
+
+                visible: newEntryPopup.editMode && priv.entryMultiple && dateField.dateModified
+                Layout.fillWidth: true
+                Layout.leftMargin: Suru.units.gu(3)
+                Layout.rightMargin: Suru.units.gu(3)
+                text: i18n.tr("All entries with the same date/time will be updated")
+                Suru.textLevel: Suru.Caption
+            }
+
             Repeater {
                 id: fieldsModel
 

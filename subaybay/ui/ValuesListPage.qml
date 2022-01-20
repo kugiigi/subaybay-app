@@ -57,7 +57,11 @@ BasePage {
     }
 
     function newEntry() {
-        newEntrySelection.openWithInitial(itemId)
+        if (isToday) {
+            newEntrySelection.openWithInitial(itemId)
+        } else {
+            newEntrySelection.openWithInitial(itemId, dateViewPath.currentItem.fromDate)
+        }
     }
     
     function goToday() {
@@ -154,8 +158,10 @@ BasePage {
 
         title: i18n.tr("Delete this value?")
         subtitle: ("%1 - %2 %3").arg(contextMenu.itemProperties.entryDate).arg(contextMenu.itemProperties.value).arg(contextMenu.itemProperties.unit)
+        checkBoxTitle: i18n.tr("Delete all with the same date/time")
+
         onAccepted: {
-            var result = mainView.values.delete(contextMenu.itemProperties.entryDateId, contextMenu.itemProperties.itemId)
+            var result = mainView.values.delete(contextMenu.itemProperties.entryDateId, contextMenu.itemProperties.itemId, checked)
             var tooltipMsg
 
             if (result.success) {
@@ -166,6 +172,14 @@ BasePage {
             }
             
             tooltip.display(tooltipMsg)
+        }
+
+        onAboutToShow: {
+            if (mainView.values.entryDateMultiple(contextMenu.itemProperties.entryDateId, contextMenu.itemProperties.itemId)) {
+                showCheckbox = true
+            } else {
+                showCheckbox = false
+            }
         }
     }
 
