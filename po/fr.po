@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-23 16:15+0000\n"
-"PO-Revision-Date: 2021-07-18 19:10+0200\n"
+"POT-Creation-Date: 2021-08-08 07:14+0000\n"
+"PO-Revision-Date: 2021-12-30 15:53+0100\n"
 "Last-Translator: Anne017\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:114
 msgid "No monitoring data for today"
-msgstr ""
+msgstr "Pas de données de suivi pour aujourd'hui"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:202
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:11
@@ -118,7 +118,7 @@ msgstr "Manipulation et formatage de la date et de l'heure"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:93
 msgid "Date and time pickers"
-msgstr ""
+msgstr "Sélecteurs de date et d'heure"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/MainPage.qml:23
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:121
@@ -245,7 +245,7 @@ msgstr "Valeur supprimée"
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/components/valueslistpage/CriteriaPopup.qml:65
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/library/dataUtils.js:55
 msgid "All"
-msgstr ""
+msgstr "Tout"
 
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/ValuesListPage.qml:282
 msgid "No data"
