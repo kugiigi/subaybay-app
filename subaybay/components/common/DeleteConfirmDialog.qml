@@ -7,21 +7,42 @@ import "../common"
 BaseDialog {
     id: deleteConfirmDialog
 
+    readonly property bool checked: checkBox.checkState === Qt.Checked
     property alias subtitle: subtitleLabel.text
+    property bool showCheckbox
+    property alias checkBoxTitle: checkBox.text
 
     parent: mainView.corePage
-    height: Suru.units.gu(20)
+    height: column.height + Suru.units.gu(18)
     standardButtons: Dialog.Ok | Dialog.Cancel
 
-    Label {
-        id: subtitleLabel
+    onAboutToShow: {
+        checkBox.checkState = Qt.Unchecked
+    }
 
-        wrapMode: Text.Wrap
+    ColumnLayout {
+        id: column
+
+        spacing: Suru.units.gu(2)
         anchors {
             top: parent.top
             topMargin: Suru.units.gu(2)
             left: parent.left
             right: parent.right
+        }
+
+        Label {
+            id: subtitleLabel
+
+            wrapMode: Text.Wrap
+            Layout.fillWidth: true
+        }
+
+        CheckBox {
+            id: checkBox
+
+            visible: deleteConfirmDialog.showCheckbox
+            Layout.fillWidth: true
         }
     }
 }

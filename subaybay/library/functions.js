@@ -69,6 +69,10 @@ function getToday() {
     return today.toString()
 }
 
+function convertDBToDate(petsa) {
+    return moment(petsa, "YYYY-MM-DD HH:mm:ss.SSS").toDate();
+}
+
 function isToday(petsa) {
     //check if current date
     var dtPetsa = moment(petsa)

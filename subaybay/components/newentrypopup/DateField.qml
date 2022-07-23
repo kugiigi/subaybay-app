@@ -13,6 +13,7 @@ ColumnLayout {
   
     property alias checkState: dateCheckBox.checkState
     property date dateValue: new Date()
+    property bool showToggle
     readonly property bool checked: checkState == Qt.Checked
 
     spacing: 5
@@ -20,17 +21,18 @@ ColumnLayout {
     RowLayout {
         Layout.fillWidth: true
         spacing: 0
+        visible: dateField.showToggle
 
-        CheckDelegate {
-            id: dateCheckBox
-        
+        ItemDelegate {
             Layout.fillWidth: true
             Layout.fillHeight: true
-            text: i18n.tr("Use current date and time")
-            checkState: Qt.Checked
-            onCheckStateChanged: {
-                if (checkState !== Qt.Checked) {
-                    dateField.dateValue = new Date()
+            CheckBox {
+                id: dateCheckBox
+                text: i18n.tr("Use current date and time")
+                checkState: Qt.Checked
+                anchors {
+                    leftMargin: Suru.units.gu(2)
+                    fill: parent
                 }
             }
         }

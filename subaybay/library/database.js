@@ -206,9 +206,9 @@ function upgradeUserVersion() {
 
 //Execute Needed Database upgrades
 function databaseUpgrade(currentVersion) {
-    // if (currentVersion < 1) {
-    //     executeUserVersion1()
-    // }
+    if (currentVersion < 1) {
+        executeUserVersion1()
+    }
     // if (currentVersion < 2) {
     //     executeUserVersion2()
     // }
@@ -218,33 +218,33 @@ function databaseUpgrade(currentVersion) {
 }
 
 //Database Changes for User Version 1
+//Version 1.4
 function executeUserVersion1() {
-    createMetaViews()
-    createReportsRecord()
-    createQuickRecord()
+    addWeight()
     console.log("Database Upgraded to 1")
     upgradeUserVersion()
 }
 
-function createReportsRecord(){
+function addWeight() {
     var db = openDB()
-
     db.transaction(function (tx) {
+        // Main definition
         tx.executeSql(
-                    "CREATE TABLE IF NOT EXISTS `reports` (`report_id` INTEGER PRIMARY KEY AUTOINCREMENT,`creator` TEXT DEFAULT 'user',`report_name` TEXT,`type` TEXT DEFAULT 'LINE',`date_range` TEXT DEFAULT 'This Month',`date_mode` TEXT DEFAULT 'Day',`filter` TEXT,`exceptions` TEXT,`date1` TEXT,`date2` TEXT)")
-    })
-
-
-}
-
-function createQuickRecord(){
-    var db = openDB()
-
-    db.transaction(function (tx) {
+                        'INSERT INTO monitor_items VALUES("weight", ?, ?, "%1", "kilogram")',[i18n.tr("Weight"), i18n.tr("Body weight")])
+        // Unit
         tx.executeSql(
-                    "CREATE TABLE IF NOT EXISTS `quick_expenses` (`quick_id` INTEGER PRIMARY KEY AUTOINCREMENT, `category_name`	TEXT, `name` TEXT, `descr` TEXT, `value` REAL);")
+                        'INSERT INTO units VALUES("kilogram", "kg")')
+        // Fields
+        tx.executeSql(
+                        'INSERT INTO monitor_items_fields VALUES("default", "weight", 1, "", "kilogram", 1)')
+        // Dashboard items
+        tx.executeSql(
+                        'INSERT INTO monitor_items_dash VALUES("weight", "last", "all")')
+        tx.executeSql(
+                        'INSERT INTO monitor_items_dash VALUES("weight", "average", "month")')
+        tx.executeSql(
+                        'INSERT INTO monitor_items_dash VALUES("weight", "average", "all")')
     })
-
 }
 
 //Database Changes for User Version 2
@@ -458,6 +458,43 @@ function updateItemValue(txtEntryDate, txtFieldId, intProfileId, txtItemId, real
     return result
 }
 
+function updateItemEntryDate(txtEntryDate, txtNewEntryDate, intProfileId) {
+    var txtSaveStatement, txtSaveCommentStatement
+    var db = openDB()
+    var rs = null
+    var newID
+    var success
+    var errorMsg
+    var result
+
+    txtSaveStatement = 'UPDATE monitor_items_values SET entry_date = strftime("%Y-%m-%d %H:%M:%f", ?, "utc") \
+                        WHERE strftime("%Y-%m-%d %H:%M:%f", entry_date, "localtime") = strftime("%Y-%m-%d %H:%M:%f", ?) \
+                        AND profile_id = ?'
+    txtSaveCommentStatement = "UPDATE monitor_items_comments SET entry_date = strftime('%Y-%m-%d %H:%M:%f', ?, 'utc') \
+                        WHERE strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime') = strftime('%Y-%m-%d %H:%M:%f', ?) \
+                        AND profile_id = ?"
+
+    try {
+        db.transaction(function (tx) {
+            tx.executeSql(txtSaveStatement,
+                          [txtNewEntryDate, txtEntryDate, intProfileId])
+            tx.executeSql(txtSaveCommentStatement,
+                          [txtNewEntryDate, txtEntryDate, intProfileId])
+    
+        })
+
+        success = true
+    } catch (err) {
+        console.log("Database error: " + err)
+        errorMsg = err
+        success = false
+    }
+
+    result = {"success": success, "error": errorMsg}
+    
+    return result
+}
+
 function addNewComment(txtEntryDate, intProfileId, txtComments) {
     var txtSaveStatement
     var db = openDB()
@@ -600,21 +637,26 @@ function getItemValues(intProfileId, txtItemId, txtScope, txtxDateFrom, txtDateT
     return arrResults
 }
 
-function deleteValue(intProfileId, txtEntryDate, txtItemId) {
+function deleteValue(intProfileId, txtEntryDate, txtItemId, deleteAll) {
     var txtSqlStatement
     var db = openDB()
     var success
     var errorMsg
     var result
 
-    txtSqlStatement = 'DELETE FROM monitor_items_values WHERE profile_id = ? AND strftime("%Y-%m-%d %H:%M:%f", entry_date, "localtime") = strftime("%Y-%m-%d %H:%M:%f", ?) AND item_id = ?'
-
     try {
         db.transaction(function (tx) {
-            tx.executeSql(txtSqlStatement, [intProfileId, txtEntryDate, txtItemId])
+            if (deleteAll) {
+                txtSqlStatement = 'DELETE FROM monitor_items_values WHERE profile_id = ? AND strftime("%Y-%m-%d %H:%M:%f", entry_date, "localtime") = strftime("%Y-%m-%d %H:%M:%f", ?)'
+                tx.executeSql(txtSqlStatement, [intProfileId, txtEntryDate])
+            } else {
+                txtSqlStatement = 'DELETE FROM monitor_items_values WHERE profile_id = ? AND strftime("%Y-%m-%d %H:%M:%f", entry_date, "localtime") = strftime("%Y-%m-%d %H:%M:%f", ?) AND item_id = ?'
+                tx.executeSql(txtSqlStatement, [intProfileId, txtEntryDate, txtItemId])
+            }
         })
 
-        if (!checkCommentDelete(intProfileId, txtEntryDate, txtItemId)) {
+        // Check if comment is shared between multiple values
+        if (!checkEntryDateMultiple(intProfileId, txtEntryDate, txtItemId)) {
             deleteComment(intProfileId, txtEntryDate)
         }
 
@@ -653,8 +695,8 @@ function deleteComment(intProfileId, txtEntryDate) {
     return result
 }
 
-// Check if comments is shared with other items
-function checkCommentDelete(intProfileId, txtEntryDate, txtItemId) {
+// Check if there are other values with exactly the same entry date
+function checkEntryDateMultiple(intProfileId, txtEntryDate, txtItemId) {
     var db = openDB()
     var rs = null
     var exists

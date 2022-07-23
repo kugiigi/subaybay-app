@@ -19,7 +19,7 @@ ApplicationWindow {
     id: mainView
 
     readonly property QtObject drawer: drawerLoader.item
-    readonly property string current_version: "1.3"
+    readonly property string current_version: "1.4"
     readonly property var suruTheme: switch(settings.currentTheme) {
             case "System":
                 undefined

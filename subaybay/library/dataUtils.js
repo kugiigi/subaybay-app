@@ -66,8 +66,11 @@ var dataUtils = dataUtils || (function (undefined) {
                 , edit: function(entryDate, fieldId, itemId, value, comments) {
                     return Database.updateItemValue(entryDate, fieldId, profile, itemId, value)
                 }
-                , delete: function(entryDate, itemId) {
-                    return Database.deleteValue(profile, entryDate, itemId);
+                , editEntryDate: function(entryDate, newEntryDate) {
+                    return Database.updateItemEntryDate(entryDate, newEntryDate, profile)
+                }
+                , delete: function(entryDate, itemId, deleteAll) {
+                    return Database.deleteValue(profile, entryDate, itemId, deleteAll);
                 }
                 , addComment: function(entryDate, comments) {
                     return Database.addNewComment(entryDate, profile, comments);
@@ -77,6 +80,9 @@ var dataUtils = dataUtils || (function (undefined) {
                 }
                 , itemValues: function(itemId, scope, dateFrom, dateTo) {
                     return Database.getItemValues(profile, itemId, scope, dateFrom, dateTo)
+                }
+                , entryDateMultiple: function(entryDate, itemId) {
+                    return Database.checkEntryDateMultiple(profile, entryDate, itemId)
                 }
                 , dashList: function() {
                     var current, datesObj, currentItems, currentItem;
@@ -135,6 +141,12 @@ var dataUtils = dataUtils || (function (undefined) {
                                     datesObj = Functions.getStartEndDate(today, 'recent');
                                 }
 
+                                dateFrom = datesObj.start;
+                                dateTo = datesObj.end;
+                                break;
+                            case scope.indexOf('month') > -1:
+                                dateScope = "thismonth";
+                                datesObj = Functions.getStartEndDate(today, 'month');
                                 dateFrom = datesObj.start;
                                 dateTo = datesObj.end;
                                 break;
@@ -244,6 +256,10 @@ var dataUtils = dataUtils || (function (undefined) {
                                 label = i18n.tr("Today's Average")
                             } else if (dateScope == "thisweek") {
                                 label = i18n.tr("This Week's Average")
+                            } else if (dateScope == "thismonth") {
+                                label = i18n.tr("This Month's Average")
+                            } else if (dateScope == "all") {
+                                label = i18n.tr("Average")
                             } else if (dateScope == "recent") {
                                 if (grouping == "day") {
                                     label = i18n.tr("Recent Daily Average")
