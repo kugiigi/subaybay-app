@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-23 12:42+0000\n"
+"POT-Creation-Date: 2022-07-23 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:228
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:229
 msgid "Menu"
 msgstr ""
 

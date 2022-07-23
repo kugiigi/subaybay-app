@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-23 12:42+0000\n"
+"POT-Creation-Date: 2022-07-23 13:49+0000\n"
 "PO-Revision-Date: 2021-12-30 15:53+0100\n"
 "Last-Translator: Anne017\n"
 "Language-Team: \n"
@@ -37,7 +37,7 @@ msgstr "À propos"
 msgid "Help"
 msgstr "Aide"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:228
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:229
 msgid "Menu"
 msgstr "Menu"
 

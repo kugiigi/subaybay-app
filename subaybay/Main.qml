@@ -221,7 +221,8 @@ ApplicationWindow {
       
       header: ApplicationHeader{
           id: applicationHeader
-          
+
+          expandable: mainView.height >= Suru.units.gu(60)
           flickable: mainPage && stackView.currentItem.flickable ? stackView.currentItem.flickable : null
           leftActions: BaseAction{
               visible: drawerLoader.visible

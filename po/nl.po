@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-23 12:42+0000\n"
+"POT-Creation-Date: 2022-07-23 13:49+0000\n"
 "PO-Revision-Date: 2021-08-02 13:36+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -39,7 +39,7 @@ msgstr "Over"
 msgid "Help"
 msgstr "Hulp"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:228
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:229
 msgid "Menu"
 msgstr "Menu"
 

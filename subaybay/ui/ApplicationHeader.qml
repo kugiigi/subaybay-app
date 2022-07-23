@@ -17,6 +17,7 @@ ToolBar {
     property list<BaseAction> rightActions
     property Flickable flickable
     property bool expanded: false
+    property bool expandable: false
     
     //WORKAROUND: Label "HorizontalFit" still uses the height of the unadjusted font size.
     implicitHeight: defaultHeight
@@ -42,6 +43,8 @@ ToolBar {
             expanded = false
         }
     }
+
+    onExpandableChanged: if (!expandable) expanded = false
     
     Loader {
         id: flickableLoader
@@ -52,12 +55,12 @@ ToolBar {
             target: flickable
             
             onVerticalOvershootChanged: {
-                if(target.verticalOvershoot < 0){
-                    if(applicationHeader.height < expansionThreshold){
+                if (target.verticalOvershoot < 0 && applicationHeader.expandable) {
+                    if (applicationHeader.height < expansionThreshold) {
                         applicationHeader.height = 50 - target.verticalOvershoot
                     }
                     
-                    if(applicationHeader.height >= expansionThreshold){
+                    if (applicationHeader.height >= expansionThreshold) {
                         expanded = true
                     }
                 }
