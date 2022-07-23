@@ -201,6 +201,7 @@ BasePage {
             valuesListPage.itemId = selectedItemId
             valuesListPage.currentDate = Functions.formatDateForDB(selectedDate)
             valuesListPage.refresh()
+            dateValue = Qt.binding(function() { return new Date(dateViewPath.currentItem.fromDate) } )
         }
     }
     
