@@ -78,6 +78,9 @@ var dataUtils = dataUtils || (function (undefined) {
                 , editComment: function(entryDate, comments) {
                     return Database.editComment(entryDate, profile, comments);
                 }
+                , deleteComment: function(entryDate) {
+                    return Database.deleteComment(profile, entryDate);
+                }
                 , itemValues: function(itemId, scope, dateFrom, dateTo) {
                     return Database.getItemValues(profile, itemId, scope, dateFrom, dateTo)
                 }

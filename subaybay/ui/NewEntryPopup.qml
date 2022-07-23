@@ -69,9 +69,10 @@ CustomPopup {
                 currentField.valueField.focus
             }
         }
-        
+
+        priv.origComments = comments
         commentTextArea.text = comments
-        
+
         openPopup()
     }
     
@@ -89,6 +90,7 @@ CustomPopup {
         property bool entryMultiple: mainView.values.entryDateMultiple(editEntryDate, editItemId)
         property date entryDate
         property string editItemId
+        property string origComments
 
         function submitData() {
             keyboard.target.commit()
@@ -155,6 +157,9 @@ CustomPopup {
                     return mainView.values.addComment(entryDate, comments).success
                 }
             } else {
+                if (origComments) {
+                    return mainView.values.deleteComment(entryDate).success
+                }
                 return true
             }
         }
