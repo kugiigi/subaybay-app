@@ -84,6 +84,9 @@ var dataUtils = dataUtils || (function (undefined) {
                 , itemValues: function(itemId, scope, dateFrom, dateTo) {
                     return Database.getItemValues(profile, itemId, scope, dateFrom, dateTo)
                 }
+                , mostRecentDate: function(itemId) {
+                    return Database.getMostRecentDate(profile, itemId)
+                }
                 , entryDateMultiple: function(entryDate, itemId) {
                     return Database.checkEntryDateMultiple(profile, entryDate, itemId)
                 }

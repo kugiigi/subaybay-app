@@ -1,7 +1,9 @@
 v.1.5
+ - Update French translations (Thanks Anne017)
  - Updated web version URL
  - Fixed #10: Cannot delete comment by editing
  - Fixed #14: Date in the filter dialog does not update correctly
+ - Add a way to go to the most recent data 
 
 v.1.4
  - Added "Weight"

@@ -23,7 +23,7 @@ BasePage {
     signal refresh
     signal itemDeleted
 
-    headerRightActions: [addAction, todayAction, sortAction, profilesAction]
+    headerRightActions: [addAction, todayAction, lastDataAction, sortAction, profilesAction]
     
     Connections {
         target: mainView.settings
@@ -70,6 +70,15 @@ BasePage {
         }
     }
 
+    function goToLastData() {
+        var lastDate = mainView.values.mostRecentDate(itemId)
+        if (lastDate) {
+            currentDate = lastDate
+        } else {
+            tooltip.display(i18n.tr("No previous data"))
+        }
+    }
+
     Shortcut {
         sequence: StandardKey.MoveToNextChar
         onActivated: next()
@@ -100,6 +109,18 @@ BasePage {
     
         onTrigger:{
             goToday()
+        }
+    }
+
+    BaseAction{
+        id: lastDataAction
+    
+        text: i18n.tr("View Last Data")
+        iconName: "go-previous"
+        enabled: dateViewPath.currentItem.count === 0
+    
+        onTrigger:{
+            goToLastData()
         }
     }
 
@@ -168,7 +189,7 @@ BasePage {
                 tooltipMsg = i18n.tr("Value deleted")
                 valuesListPage.itemDeleted()
             } else {
-                tooltip = i18n.tr("Error deleting")
+                tooltipMsg = i18n.tr("Error deleting")
             }
             
             tooltip.display(tooltipMsg)
