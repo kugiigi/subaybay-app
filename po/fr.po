@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-23 13:49+0000\n"
+"POT-Creation-Date: 2022-07-23 14:54+0000\n"
 "PO-Revision-Date: 2021-12-30 15:53+0100\n"
 "Last-Translator: Anne017\n"
 "Language-Team: \n"
@@ -765,7 +765,7 @@ msgstr "Plus vieux"
 msgid "In The Future"
 msgstr "Dans le futur"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/aarch64-linux-gnu/app/subaybay/subaybay.desktop.h:1
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/x86_64-linux-gnu/app/subaybay/subaybay.desktop.h:1
 msgid "Subaybay"
 msgstr "Subaybay"
 
