@@ -591,6 +591,34 @@ function checkProfileData(intProfileId) {
     return exists
 }
 
+function getMostRecentDate(intProfileId, txtItemId) {
+    var db = openDB()
+    var rs = null
+    var txtSelectStatement
+    var txtWhereStatement
+    var txtFullStatement
+    var arrArgs = []
+    var lastDate
+
+    db.transaction(function (tx) {
+        txtSelectStatement = "SELECT max((strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime'))) as entry_date \
+                              FROM monitor_items_values"
+        txtWhereStatement = "WHERE profile_id = ?"
+        if (txtItemId !== "all") {
+            txtWhereStatement = txtWhereStatement + " AND item_id = ?"
+            arrArgs = [intProfileId, txtItemId]
+        } else {
+            arrArgs = [intProfileId]
+        }
+
+        txtFullStatement = txtSelectStatement + " " + txtWhereStatement
+        rs = tx.executeSql(txtFullStatement,arrArgs)
+        lastDate = rs.rows.item(0).entry_date
+    })
+
+    return lastDate
+}
+
 function getItemValues(intProfileId, txtItemId, txtScope, txtxDateFrom, txtDateTo) {
     var db = openDB()
     var arrResults = []
