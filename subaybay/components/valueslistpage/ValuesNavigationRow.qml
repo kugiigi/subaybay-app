@@ -61,14 +61,16 @@ RowLayout {
                     Layout.fillWidth: true
                     Layout.alignment: Qt.AlignBaseline
                     Suru.textLevel: Suru.HeadingTwo
+                    fontSizeMode: Text.HorizontalFit
                     font.pointSize: navigationRow.biggerDateLabel ? Suru.units.gu(2.5) : Suru.units.gu(2)
+                    minimumPointSize: navigationRow.biggerDateLabel ? Suru.units.gu(1.5) : Suru.units.gu(1)
                     font.italic: true
                     role: "date"
                 }
               
                 CustomLabel {
                     id: scopeLabel
-    
+
                     Layout.alignment: Qt.AlignBottom
                     Suru.textLevel: Suru.HeadingThree
                     text: valuesListPage.scope
