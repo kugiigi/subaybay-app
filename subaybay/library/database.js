@@ -591,7 +591,7 @@ function checkProfileData(intProfileId) {
     return exists
 }
 
-function getMostRecentDate(intProfileId, txtItemId) {
+function getDateWithData(forward, intProfileId, txtItemId, txtDateBase) {
     var db = openDB()
     var rs = null
     var txtSelectStatement
@@ -601,14 +601,23 @@ function getMostRecentDate(intProfileId, txtItemId) {
     var lastDate
 
     db.transaction(function (tx) {
-        txtSelectStatement = "SELECT max((strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime'))) as entry_date \
-                              FROM monitor_items_values"
         txtWhereStatement = "WHERE profile_id = ?"
+
+        if (forward) {
+            txtSelectStatement = "SELECT min((strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime'))) as entry_date"
+            txtWhereStatement = txtWhereStatement + " AND date(monitor_items_values.entry_date, 'localtime') > date(?)"
+        } else {
+            txtSelectStatement = "SELECT max((strftime('%Y-%m-%d %H:%M:%f', entry_date, 'localtime'))) as entry_date"
+            txtWhereStatement = txtWhereStatement + " AND date(monitor_items_values.entry_date, 'localtime') < date(?)"
+        }
+
+        txtSelectStatement = txtSelectStatement + " FROM monitor_items_values"
+
         if (txtItemId !== "all") {
             txtWhereStatement = txtWhereStatement + " AND item_id = ?"
-            arrArgs = [intProfileId, txtItemId]
+            arrArgs = [intProfileId, txtDateBase, txtItemId]
         } else {
-            arrArgs = [intProfileId]
+            arrArgs = [intProfileId, txtDateBase]
         }
 
         txtFullStatement = txtSelectStatement + " " + txtWhereStatement

@@ -278,6 +278,7 @@ CustomPopup {
                     Layout.leftMargin: 20
                     Layout.rightMargin: 20
 
+                    itemIndex: model.index
                     itemId: model.itemId
                     title: model.displayName + " *"
                     fields: model.fields
@@ -306,9 +307,20 @@ CustomPopup {
 
                 TextArea {
                     id: commentTextArea
-            
+
+                    function focusPrevious() {
+                        var prevItem = commentTextArea.nextItemInFocusChain(false)
+                        prevItem.focus = true
+                    }
+
                     Layout.fillWidth: true
                     font.pixelSize: 15
+                    Keys.onPressed: {
+                        if (event.key == Qt.Key_Backspace && commentTextArea.text == "") {
+                            focusPrevious()
+                        }
+                    }
+                    Keys.onUpPressed: focusPrevious()
                     onFocusChanged: {
                         if (focus) {
                             Functions.scrollToView(this, flickable, commentLabel.height + commentColumn.spacing, 0)

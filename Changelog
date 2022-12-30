@@ -1,3 +1,10 @@
+v.1.6
+ - Initial Ubuntu 20.04 (Focal) support
+ - Change theme in real time when set to system theme
+ - Support up/down arrow keys and backspace for moving between fields when adding new values
+ - Added a way to only navigate between dates with data
+ - Fix label sizing of the date in list page
+
 v.1.5
  - Update French translations (Thanks Anne017)
  - Updated web version URL

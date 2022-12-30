@@ -23,7 +23,7 @@ BasePage {
     signal refresh
     signal itemDeleted
 
-    headerRightActions: [addAction, todayAction, lastDataAction, sortAction, profilesAction]
+    headerRightActions: [addAction, todayAction, lastDataAction, nextDataAction, sortAction, profilesAction]
     
     Connections {
         target: mainView.settings
@@ -71,11 +71,20 @@ BasePage {
     }
 
     function goToLastData() {
-        var lastDate = mainView.values.mostRecentDate(itemId)
+        var lastDate = mainView.values.lastDateWithData(itemId, currentDate)
         if (lastDate) {
             currentDate = lastDate
         } else {
-            tooltip.display(i18n.tr("No previous data"))
+            tooltip.display(i18n.tr("No older data"))
+        }
+    }
+
+    function goToNextData() {
+        var lastDate = mainView.values.nextDateWithData(itemId, currentDate)
+        if (lastDate) {
+            currentDate = lastDate
+        } else {
+            tooltip.display(i18n.tr("No newer data"))
         }
     }
 
@@ -87,6 +96,16 @@ BasePage {
     Shortcut {
         sequence: StandardKey.MoveToPreviousChar
         onActivated: previous()
+    }
+
+    Shortcut {
+        sequence: StandardKey.MoveToNextWord
+        onActivated: goToNextData()
+    }
+
+    Shortcut {
+        sequence: StandardKey.MoveToPreviousWord
+        onActivated: goToLastData()
     }
 
     BaseAction{
@@ -117,10 +136,20 @@ BasePage {
     
         text: i18n.tr("View Last Data")
         iconName: "go-previous"
-        enabled: dateViewPath.currentItem.count === 0
-    
+
         onTrigger:{
             goToLastData()
+        }
+    }
+
+    BaseAction{
+        id: nextDataAction
+    
+        text: i18n.tr("View Next Data")
+        iconName: "go-next"
+    
+        onTrigger:{
+            goToNextData()
         }
     }
 
