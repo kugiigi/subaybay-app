@@ -1,5 +1,5 @@
 import QtQuick 2.12
-import Ubuntu.Components 1.3 as UT
+import Lomiri.Components 1.3 as UT
 import "../../library/dataUtils.js" as DataUtils
 
 Item{

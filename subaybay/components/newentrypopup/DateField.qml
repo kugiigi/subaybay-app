@@ -1,8 +1,8 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.5
 import QtQuick.Controls.Suru 2.2
-import Ubuntu.Components 1.3 as UT
-import Ubuntu.Components.Pickers 1.3
+import Lomiri.Components 1.3 as UT
+import Lomiri.Components.Pickers 1.3
 import QtQuick.Layouts 1.12
 import "../common"
 import "../../library/functions.js" as Functions

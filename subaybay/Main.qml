@@ -1,12 +1,12 @@
 import QtQuick 2.12
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Controls.Suru 2.2
-import Ubuntu.Components.Themes.Ambiance 1.3 as Ambiance
-import Ubuntu.Components.Themes.SuruDark 1.3 as SuruDark
+import Lomiri.Components.Themes.Ambiance 1.3 as Ambiance
+import Lomiri.Components.Themes.SuruDark 1.3 as SuruDark
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
 import UserMetrics 0.1
-import Ubuntu.Components 1.3 as UT
+import Lomiri.Components 1.3 as UT
 import "library/database.js" as Data
 import "library/dataUtils.js" as DataUtils
 import "library/functions.js" as Functions

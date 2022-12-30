@@ -1,5 +1,5 @@
 import QtQuick.Controls 2.5
-import Ubuntu.Components 1.3 as UT
+import Lomiri.Components 1.3 as UT
 import QtQuick.Layouts 1.12
 import "../common"
 
