@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-23 14:54+0000\n"
+"POT-Creation-Date: 2022-12-30 09:55+0000\n"
 "PO-Revision-Date: 2021-08-02 13:36+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -18,28 +18,28 @@ msgstr ""
 "X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:114
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:119
 msgid "No monitoring data for today"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:202
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:207
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:11
 msgid "Settings"
 msgstr "Instellingen"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:203
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:208
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:9
 msgid "About"
 msgstr "Over"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:204
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:209
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:14
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/HelpPage.qml:28
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:16
 msgid "Help"
 msgstr "Hulp"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:229
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:234
 msgid "Menu"
 msgstr "Menu"
 
@@ -747,7 +747,7 @@ msgstr "Ouder"
 msgid "In The Future"
 msgstr "Toekomstig"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/x86_64-linux-gnu/app/subaybay/subaybay.desktop.h:1
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/build/aarch64-linux-gnu/app/subaybay/subaybay.desktop.h:1
 msgid "Subaybay"
 msgstr "Subaybay"
 
