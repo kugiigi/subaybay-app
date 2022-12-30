@@ -1,6 +1,7 @@
 v.1.6
  - Initial Ubuntu 20.04 (Focal) support
  - Change theme in real time when set to system theme
+ - Support up/down arrow keys and backspace for moving between fields when adding new values
 
 v.1.5
  - Update French translations (Thanks Anne017)

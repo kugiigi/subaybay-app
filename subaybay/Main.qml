@@ -22,7 +22,6 @@ ApplicationWindow {
     readonly property string current_version: "1.6"
     readonly property var suruTheme: switch(settings.currentTheme) {
             case "System":
-//~                 undefined
                 if (Theme.name == "Ubuntu.Components.Themes.SuruDark") {
                     Suru.Dark
                 } else {

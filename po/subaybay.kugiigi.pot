@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-30 09:55+0000\n"
+"POT-Creation-Date: 2022-12-30 11:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,28 +17,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:119
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:118
 msgid "No monitoring data for today"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:207
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:206
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:11
 msgid "Settings"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:208
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:207
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:9
 msgid "About"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:209
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:208
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/AboutPage.qml:14
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/HelpPage.qml:28
 #: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/SettingsPage.qml:16
 msgid "Help"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:234
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/Main.qml:233
 msgid "Menu"
 msgstr ""
 
@@ -169,7 +169,7 @@ msgstr ""
 msgid "All entries with the same date/time will be updated"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:303
+#: /home/kugiigi/Documents/Development/Subaybay/subaybay-app/subaybay/ui/NewEntryPopup.qml:304
 msgid "Comments/Observations"
 msgstr ""
 

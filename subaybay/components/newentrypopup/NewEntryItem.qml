@@ -9,6 +9,7 @@ import "../../library/functions.js" as Functions
 ColumnLayout {
     id: newEntryItem
 
+    property int itemIndex
     property string itemId
     property alias title: titleLabel.text
     property alias fields: fieldsRepeater.model
@@ -22,7 +23,13 @@ ColumnLayout {
     function focusFirstField() {
         fieldsRepeater.itemAt(0).valueField.focus = true
     }
-    
+
+    function focusPrevious(item) {
+        var prevItem = item.nextItemInFocusChain(false)
+
+        prevItem.focus = true
+    }
+
     function focusNext(item) {
         var nextItem = item.nextItemInFocusChain(true)
 
@@ -65,6 +72,12 @@ ColumnLayout {
             Layout.fillWidth: true
             spacing: 10
 
+            function focusPrevious() {
+                if (!(newEntryItem.itemIndex == 0 && model.index == 0)) {
+                    newEntryItem.focusPrevious(this)
+                }
+            }
+
             CustomTextField {
                 id: valueTextField
                 
@@ -80,6 +93,13 @@ ColumnLayout {
                 font.pixelSize: 20
                 horizontalAlignment: TextInput.AlignHCenter
                 Keys.onReturnPressed: newEntryItem.focusNext(this)
+                Keys.onPressed: {
+                    if (event.key == Qt.Key_Backspace && valueTextField.text == "") {
+                        focusPrevious()
+                    }
+                }
+                Keys.onUpPressed: focusPrevious()
+                Keys.onDownPressed: newEntryItem.focusNext(this)
                 onFocusChanged: {
                     if (focus) {
                         var labelY = labelRow.mapToItem(flickable.contentItem, 0, 0).y
